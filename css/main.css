@@ -883,3 +883,302 @@ body>section {
     display: inline-block;
     margin-left: 15px;
 }
+
+
+/***********************
+********* pemerintahan ******
+************************/
+
+.nav-tabs>li {
+    margin-bottom: 0px;
+    border-bottom: 0px solid #e6e6e6;
+  }
+      /* margin-bottom: 0px;
+      border: 1px solid transparent;
+  }*/
+  
+  .nav-tabs{
+    border-bottom: transparent;
+    border-right: 0px solid #e6e6e6;
+  }
+  
+  .nav-tabs>li>a {
+    background: #f5f5f5;
+    color: #666;
+    border-radius: 0;
+    border: 0 none;
+    line-height: 24px;
+    margin-right:0;
+    padding: 13px 15px;
+  }
+  
+  .nav-tabs li:last-child{
+    border-bottom: 0 none;
+  } 
+  
+  .nav-stacked>li+li{
+    margin-top: 0;
+  }
+  
+  .nav-tabs>li>a:hover{
+    background: #1f1f20;
+    color: grey;
+  }
+  
+  .nav-tabs>li.active>a, 
+  /*.nav-tabs>li.active>a:hover,*/
+  .nav-tabs>li.active>a:focus {
+    border: 0;
+    color:#000;
+    background: #c52d2f; /*#1f1f20*/ 
+    position: relative;
+  }
+  
+  .nav-tabs>li.active>a:after {
+    position: absolute;
+    content:  "";
+    width: auto;
+    height: auto;
+    border-style:solid;
+    border-color: transparent transparent transparent #c52d2f;
+    border-width: 25px 22px;
+    right: -44px;
+    top:0;
+  }
+              /*
+              .nav-tabs {
+                  border: none;
+              }
+  
+              .nav-tabs>li>a {
+                  color: #666;
+                  border-radius: 0;
+                  border: 1px solid transparent;
+                  line-height: 24px;
+                  margin-right: 0;
+                  padding: 13px 30px;
+              }
+              .nav-tabs>li>a:hover{
+                  background-color: transparent;
+                  border-color: transparent;
+              }
+  
+              .nav-tabs li:last-child {
+                  border-bottom: 0 none;
+              }
+  
+              .nav-stacked>li+li {
+                  margin-top: 0;
+              }*/
+  
+              /*#content .nav-tabs>li.active>a,
+              #content .nav-tabs>li.active>a:hover,
+              #content .nav-tabs>li.active>a:focus {
+                  color: #EC5538;
+                  background-color: #c52d2f; /*#F9FAFB;*/
+             /*    border: 1px solid #E9EFF4;
+                  font-weight: 500;
+                  -webkit-transition: .4s;
+                  transition: .4s;
+                  border-radius: 5px;
+              }*/
+  
+  #content .tab-pane{
+      padding-left: 100px;
+      padding-bottom: 10px;
+  }
+
+/***********************
+********* selayang-pandang ******
+************************/
+
+.header-selayang  {
+    margin-top: -70px;
+
+}
+
+.header-selayang h1 {
+    font-size: 50px;
+    margin-top: 80px;
+}
+
+.header-selayang .jumbotron {
+    height: 324px;
+    background-size: cover;
+    color: white;
+}
+
+/* Visi dan Misi */
+
+.visi h1 {
+    font-size: 40px;
+    
+}
+
+.visi .jumbotron {
+    background: none;
+
+}
+
+.misi {
+    margin-top: 30px;
+}
+
+
+.misi .misi-wrap {
+    margin-bottom: 35px;
+    padding-right: 50px;
+}
+
+.misi .misi-wrap .logo {
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    line-height: 40px;
+    color: #ff1a1a;
+    
+    font-size: 5.8rem;
+    
+    -webkit-transition: .4s;
+    transition: .4s;
+    margin-bottom: 30px;
+    margin-top: -5px;
+    margin-right: 40px;
+    float: left;
+}
+
+
+.misi .misi-wrap h2 {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+    margin-bottom: 24px;
+
+}
+.misi .misi-wrap p {
+    font-size: 20px;
+    margin: 0;
+    line-height: 26px;
+    color: #707070;
+}
+
+.nawa-cita {
+    margin-top: 50px;
+}
+
+/* Akhir Visi Misi*/
+
+/* Sejarah */
+.quotes {
+    margin-top: 50px;
+}
+
+.quotes .display-4 {
+    font-size: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 270px;
+}
+
+.quotes .jumbotron {
+    height: 820px;
+    background: none;
+}
+
+/*tentang minahasa*/
+.tentang-minahasa .tombol {
+    margin-top: 20px;
+
+}
+
+.tentang-minahasa span {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.tentang-minahasa p {
+    font-size: 15px;
+    
+}
+
+.tentang-minahasa .tentang-minahasa-info {
+    margin-top: 50px;
+    
+}
+
+#lebih-lanjut1 {
+    margin-top: 50px;
+}
+
+#lebih-lanjut2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#lebih-lanjut1 p {
+    margin-top: 50px;
+}
+
+#lebih-lanjut2 p {
+    margin-top: 50px;
+}
+ 
+ /*fact panel 1 */
+/*#fact-panel1 .info {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    
+    margin-top: 10px;
+    background-color: white;
+}
+
+#fact-panel1 .info img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#fact-panel1 .info h3 {
+    
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#fact-panel1 .info p {
+    font-size: 18px;
+    color: #ACACAC;
+    margin-top: -5px;
+    font-weight: 200;*/
+
+
+/*Akhir Sejarah*/
+
+/* Peta dan Topografi */
+
+.info-peta h1 {
+    font-size: 40px;
+    
+}
+
+.info-peta .jumbotron {
+    background: none;
+
+}
+
+/*Ahir Peta dan Topografi */
+
+
+/*Lambang dan Arti*/
+.arti-lambang .arti-title {
+    font-size: 28px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.arti-lambang .arti-deskripsi {
+    font-size: 17px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+    
+}
