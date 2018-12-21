@@ -20,22 +20,22 @@ jQuery(function ($) {
     });
 
 
-    // portfolio filter
+    // galeri filter
     $(window).load(function () {
         'use strict';
-        var $portfolio_selectors = $('.portfolio-filter >li>a');
-        var $portfolio = $('.portfolio-items');
-        $portfolio.isotope({
-            itemSelector: '.portfolio-item',
+        var $galeri_selectors = $('.galeri-filter >li>a');
+        var $galeri = $('.galeri-items');
+        $galeri.isotope({
+            itemSelector: '.galeri-item',
             layoutMode: 'fitRows'
 
         });
 
-        $portfolio_selectors.on('click', function () {
-            $portfolio_selectors.removeClass('active');
+        $galeri_selectors.on('click', function () {
+            $galeri_selectors.removeClass('active');
             $(this).addClass('active');
             var selector = $(this).attr('data-filter');
-            $portfolio.isotope({
+            $galeri.isotope({
                 filter: selector
             });
             return false;
@@ -54,7 +54,7 @@ jQuery(function ($) {
                 form.prepend(form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn());
             }
         }).done(function (data) {
-            form_status.html('<p class="text-success">' + data.message + '</p>').delay(3000).fadeOut();
+            form_status.html('<p class="text-success">' + data.message + '</p>').delay(8000).fadeOut();
         });
     });
 
