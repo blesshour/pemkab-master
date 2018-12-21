@@ -29,7 +29,7 @@
 	<link rel="stylesheet" href="<?=$this->asset('/css/font-awesome.min.css')?>" type="text/css" />
 	<link rel="stylesheet" href="<?=$this->asset('/css/animate.min.css')?>" type="text/css" />
 	<link rel="stylesheet" href="<?=$this->asset('/css/prettyPhoto.css')?>" type="text/css" />
-	
+	<link rel="stylesheet" href="<?=$this->asset('/css/owl.theme.default.min.css')?>" type="text/css" />
 	<link rel="stylesheet" href="<?=$this->asset('/css/owl.carousel.min.css')?>" type="text/css" />
 	<link rel="stylesheet" href="<?=$this->asset('/css/icomoon.css')?>" type="text/css" />
 	
