@@ -489,7 +489,7 @@ body>section {
 }
 
 
-#main-sliders .hrbanner .item img {
+.hrbanner .item img {
     height: auto;
 }
 
@@ -1181,4 +1181,265 @@ body>section {
     line-height: 1.5;
     padding-bottom: 20px;
     
+}
+
+/*************************
+********* Contact Us CSS ******
+**************************/
+
+#page-suara-anda {
+    padding-top: 0;
+}
+
+#page-suara-anda .page-title{
+    margin: auto;
+    background-image: linear-gradient(#d6625b, #fff);
+    padding-top: 50px;
+}
+
+#page-suara-anda .contact-form .form-group label {
+    color: #989898;
+    font-size: 16px;
+    font-weight: 300;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#page-suara-anda .form-group .form-control {
+    padding: 0 12px;
+    border-color: #e59f9b3b;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 50px;
+}
+
+#page-suara-anda .form-group textarea.form-control{
+    height: 200px;
+}
+
+#page-suara-anda .form-group button{
+    font-size: 15px;
+    padding: 15px 30px;
+}
+
+textarea#message {
+    resize: none;
+    padding: 10px;
+}
+
+#page-suara-anda .contact-wrap {
+
+}
+
+#page-suara-anda .box {
+    margin: auto;
+    width: 80%;
+    padding: 30px;
+    margin-bottom: 40px;
+    background-color: rgb(241, 194, 194);
+    -webkit-box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
+            box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+/*************************
+********* galeri CSS ******
+**************************/
+
+#galeri{
+    margin: auto;
+}
+
+#galeri .page-title{
+    padding: 0;
+
+}
+
+#galeri .page-title h1{
+    color: #da251d;
+    padding: 0;
+
+}
+
+.galeri-items,
+.galeri-filter {
+    list-style: none outside none;
+    margin: 0 0 40px 0;
+    padding: 20px 0 0 0;
+}
+
+.galeri-filter>li {
+    display: inline-block;
+}
+
+.galeri-filter>li a {
+    background: none repeat scroll 0 0 #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 20px;
+    text-transform: uppercase;
+    transition: all 0.9s ease 0s;
+    -moz-transition: all 0.9s ease 0s;
+    -webkit-transition: all 0.9s ease 0s;
+    -o-transition: all 0.9s ease 0s;
+    border: 1px solid #F2F2F2;
+    outline: none;
+    border-radius: 3px;
+}
+
+.galeri-filter>li a:hover,
+.galeri-filter>li a.active {
+    color: #fff;
+    background: #EC5538;
+    border: 1px solid #EC5538;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.galeri-items>li {
+    float: left;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.galeri-item {
+    margin: 0;
+    padding: 0;
+}
+
+
+#galeri .recent-work-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+#galeri .recent-work-wrap img {
+    width: 100%;
+}
+
+#galeri .recent-work-wrap .recent-work-inner {
+    top: 0;
+    background: transparent;
+    opacity: .8;
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+#galeri .recent-work-wrap .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    vertical-align: middle;
+    -webkit-transition: opacity 500ms;
+    transition: opacity 500ms;
+    padding: 30px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#galeri .recent-work-wrap .overlay .preview {
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    background-color: #da251d;
+    padding: 5px;
+}
+
+#galeri .recent-work-wrap:hover .overlay {
+    opacity: 1;
+}
+
+/* Start: Recommended Isotope styles */
+
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+    z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+.isotope {
+    -webkit-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+}
+
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+}
+
+
+/* End: Recommended Isotope styles */
+
+
+/* disable CSS transitions for containers with infinite scrolling*/
+
+.isotope.infinite-scrolling {
+    -webkit-transition: none;
+    transition: none;
+}
+
+
+/*************************
+********* Berita css ******
+**************************/
+
+#berita .item {
+    position: relative;
+    overflow: hidden;
+}
+
+#berita .item img {
+    min-width: 100%;
+}
+
+#berita .hrbanner .item img {
+    height: auto;
 }
