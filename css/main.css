@@ -476,6 +476,11 @@ body>section {
     justify-content: center;
 }
 
+#main-sliders .hrbanner .item  > img {
+    width: 100%;
+    height: auto;
+}
+
 #main-sliders .item .overlay .preview {
     color: #fff;
     height: 50px;
@@ -492,6 +497,8 @@ body>section {
 #main-sliders .hrbanner .item img {
     height: auto;
 }
+
+
 
 
 /***********************
@@ -1440,7 +1447,6 @@ textarea#message {
     width: 100%;
     height: auto;
 }
-
 
 
 /*********************
@@ -2446,3 +2452,4 @@ body:not(.device-touch) .social-icon i {
 .col_one_third { width: 30.63%; }
 
 .nobottommargin { margin-bottom: 0 !important; }
+

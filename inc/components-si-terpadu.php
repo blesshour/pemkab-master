@@ -9,7 +9,7 @@
                 <div class="box fadeInRight">
                   <a href="">
                      <div class="pull-left icon text-center">
-                           <i class="fa fa-commenting"></i>
+                           <i class="fa fa-cutlery"></i>
                      </div>
                      <div class="caption">
                            <h3>Sistem Informasi</h5>
@@ -23,7 +23,7 @@
                 <div class="box fadeInRight">
                   <a href="">
                      <div class="pull-left icon col-3 text-center">
-                        <i class="fa fa-commenting"></i>
+                        <i class="fa fa-medkit"></i>
                      </div>
                      <div class="caption col-9">
                            <h3>Sistem Informasi</h5>
@@ -37,7 +37,7 @@
                 <div class="box fadeInRight">
                   <a href="">
                         <div class="pull-left icon col-3 text-center">
-                           <i class="fa fa-commenting"></i>
+                           <i class="fa fa-unlock"></i>
                         </div>
                         <div class="caption col-9">
                            
@@ -53,7 +53,7 @@
                 <div class="box fadeInRight">
                   <a href="">
                      <div class="pull-left icon col-3 text-center">
-                        <i class="fa fa-commenting"></i>
+                        <i class="fa fa-ambulance"></i>
                      </div>
                      <div class="caption col-9">
                            <h3>Sistem Informasi</h5>
