@@ -476,6 +476,11 @@ body>section {
     justify-content: center;
 }
 
+#main-sliders .hrbanner .item  > img {
+    width: 100%;
+    height: auto;
+}
+
 #main-sliders .item .overlay .preview {
     color: #fff;
     height: 50px;
@@ -489,9 +494,7 @@ body>section {
 }
 
 
-.hrbanner .item img {
-    height: auto;
-}
+
 
 
 /***********************
@@ -1438,8 +1441,4 @@ textarea#message {
 
 #berita .item img {
     min-width: 100%;
-}
-
-#berita .hrbanner .item img {
-    height: auto;
 }
