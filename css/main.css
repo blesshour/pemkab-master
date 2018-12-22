@@ -1024,6 +1024,7 @@ body>section {
 
 .visi .jumbotron {
     background: none;
+    margin-top: -50px;
 
 }
 
@@ -1055,13 +1056,6 @@ body>section {
 }
 
 
-.misi .misi-wrap h2 {
-    font-size: 14px;
-    color: #333;
-    margin: 0;
-    margin-bottom: 24px;
-
-}
 .misi .misi-wrap p {
     font-size: 20px;
     margin: 0;
@@ -1080,7 +1074,7 @@ body>section {
     margin-top: 50px;
 }
 
-.quotes .display-4 {
+.quotes .moto {
     font-size: 40px;
     margin-left: 60px;
     margin-right: 60px;
@@ -1173,7 +1167,7 @@ body>section {
 
 }
 
-/*Ahir Peta dan Topografi */
+/*Akhir Peta dan Topografi */
 
 
 /*Lambang dan Arti*/
