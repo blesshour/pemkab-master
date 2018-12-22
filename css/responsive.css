@@ -60,6 +60,7 @@
   .quotes .moto {
     font-size: 30px;
   }
+  /*AkhirSelayangPandang*/
 
 }
 
@@ -131,8 +132,21 @@
   .quotes .moto {
     font-size: 30px;
   }
+  /*AkhirSelayangPandang*/
 
+  /*Page Suara Anda*/
+    #page-suara-anda .page-title h1 {
+    font-size: 40px;
+  }
 
+  /* AkhirPageSuaraAnda */
+
+  /* Galeri */
+  #galeri .page-title h1{
+    font-size: 40px;
+  }
+
+  /*AkhirGalery*/
 }
 
 /* xs */
@@ -204,6 +218,22 @@
   .quotes .moto {
     font-size: 30px;
   }
+  /*AkhirSelayangPandang*/
+
+  /* Page Suara Anda */
+    
+    #page-suara-anda .page-title h1 {
+    font-size: 40px;
+  }
+
+  /* AkhirPageSuaraAnda */
+
+  /* Galeri */
+  #galeri .page-title h1{
+    font-size: 40px;
+  }
+
+  /*AkhirGalery*/
 
 }
 
@@ -369,5 +399,21 @@
   .quotes {
     display: none;
   }
+  /*AkhirSelayangPandang*/
+
+  /* Page Suara Anda */
+    
+    #page-suara-anda .page-title h1 {
+    font-size: 40px;
+    }
+
+  /* AkhirPageSuaraAnda */
+
+  /* Galeri */
+  #galeri .page-title h1{
+    font-size: 40px;
+  }
+
+  /*AkhirGalery*/
 }
 
