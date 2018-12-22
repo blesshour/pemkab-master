@@ -33,9 +33,9 @@
 
     <!-- QUOTES 1 -->
     <section class="quotes" id="quotes1">
-      <div class="jumbotron wow fadeInUp">
+      <div class="jumbotron jumbotron-fluid wow fadeInUp">
           <div class="container text-center">
-          <h1 class="display-4">"Si Tou Timou Tumou Tou, manusia hidup untuk menghidupkan orang lain."</h1>
+          <h1 class="moto">"Si Tou Timou Tumou Tou, manusia hidup untuk menghidupkan orang lain."</h1>
           <p class="lead">- Sam Ratulangie</p>
         </div>
       </div>
@@ -58,7 +58,7 @@
    <!-- LEBIH LANJUT 1-->
    <section class="lebih-lanjut" id="lebih-lanjut1">
      <div class="row">
-       <div class="col-lg-6 wow fadeInLeft">
+       <div class="col-lg-6 center wow fadeInLeft">
          <img src="<?=$this->asset('/images/sejarah/sejarah2.jpg')?>" alt="Minahasa" class="img-fluid">
        </div>
        <div class="col-lg-6 wow fadeInRight">
@@ -83,7 +83,7 @@
         <li>Teterusan : Panglima perang</li>
         <li>Potuasan : Penasehat</li>
        </div>
-       <div class="col-lg-6 wow fadeInRight">
+       <div class="col-lg-6 center wow fadeInRight">
          <img src="<?=$this->asset('/images/sejarah/sejarah3.jpg')?>" alt="Minahasa" class="img-fluid">
        </div>
      </div>
