@@ -15,9 +15,13 @@
 
   <!-- VISI -->
   <section class="visi" id="visi">
+
+  <div class="container text-center">
+      <p class="lead">VISI</p>
+    </div>
+
    <div class="jumbotron">
     <div class="container text-center wow fadeInDown">
-      <p class="lead">VISI</p>
       <h1>"Minahasa Maju Dalam Ekonomi dan Budaya, Berdaulat, Adil, dan Sejahtera"</h1>
     </div>
       </div>
@@ -30,9 +34,8 @@
 <section id='misi' class="misi wow fadeInDown">
 	<div class="container text-center">
       <p class="lead">MISI</p>
-      
     </div>
-<div>
+
    <div class="container">
 
             <div class="row">
@@ -113,7 +116,7 @@
       <p class="lead">NAWA CITA RR-RD</p>
     </div>
   <div class="row">
-   <div class="col-lg-4 wow fadeInLeft">
+   <div class="col-lg-4 center wow fadeInLeft">
     <img src="<?=$this->asset('/images/ror/ror1.jpg')?>" alt="Gambar RR-RD" alt="Gambar RR-RD" class="img-fluid">
    </div>
    <div class="col-lg-8 wow fadeInRight">
@@ -138,7 +141,7 @@
       <p class="lead">22 KEGIATAN UNGGULAN</p>
     </div>
   <div class="row">
-   <div class="col-lg-4 wow fadeInLeft">
+   <div class="col-lg-4 center wow fadeInLeft">
     <img src="<?=$this->asset('/images/ror/ror2.jpg')?>" alt="Gambar RR-RD" class="img-fluid">
    </div>
    <div class="col-lg-8 wow fadeInRight">
@@ -167,7 +170,7 @@
     </div>
     </div>
     <div class="row">
-    <div class="col-lg-4 wow fadeInLeft">
+    <div class="col-lg-4 center wow fadeInLeft">
     <img src="<?=$this->asset('/images/ror/ror3.jpg')?>" alt="Gambar RR-RD" class="img-fluid">
    </div>
    <div class="col-lg-8 wow fadeInRight">
