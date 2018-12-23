@@ -1,17 +1,18 @@
 <?=$this->layout('index');?>
 
-<div class="container">
-  <div class="jumbotron">
-    <h1 class="animated fadeInUp">Wakil Bupati Minahasa</h1>      
-    <p class="animated fadeInUp">Profil Wakil Bupati Minahasa 2018-2023</p>
-  </div>  
-</div>
+ <section class="header-selayang" id="header-visi-dan-misi">
+   <div class="jumbotron" style="background-image: url(<?=$this->asset('/images/gallery/gallery7.jpg')?>)">
+    <div class="container wow fadeIn">
+     <h1>Profil Wakil Bupati Minahasa 2018-2023</h1>
+    </div>
+   </div>
+ </section>
 
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <div align="center">
-        <img src="<?=$this->asset('/images/logominahasa.png')?>" alt="">
+      <div class="animated zoomIn" align="center">
+        <img src="<?=$this->asset('/images/uploads/profil-wbupati.jpg')?>" alt="" title="Wakil Bupati Minahasa">
       </div>
     </div>
 
@@ -46,11 +47,14 @@
       </ul>
 
       <!-- Tab panes -->
+      <section class="tab-profil">
       <div class="tab-content">
         <div id="home" class="container tab-pane active"><br>
+          <div class="animated fadeInLeft">
           <table border="0px" align="left" width="90%">
             <tr>
               <td>Nama Lengkap</td>
+ 
               <td>:</td>
               <td>Robby Dondokambey, S.Si</td>
             </tr>
@@ -110,9 +114,10 @@
               <td><b><i> </i></b></td>
             </tr>
           </table>
+          </div>
         </div>
 
-        <div id="menu1" class="container tab-pane fade"><br>
+        <div id="menu1" class="container tab-pane animated fadeInLeft"><br>
           <h4>PENDIDIKAN FORMAL</h4>
           SD Negeri IX Manado <br>
           SMP Negeri II Manado <br>
@@ -124,11 +129,11 @@
             Birokrat terakhir Kepada Badan Pertahanan Minsel, Dirut PDAM Minahasa
           </div>
 
-          <div id="menu2" class="container tab-pane fade"><br>
+          <div id="menu2" class="container tab-pane animated fadeInLeft"><br>
 
           </div>
 
-          <div id="menu3" class="container tab-pane fade"><br>
+          <div id="menu3" class="container tab-pane animated fadeInLeft"><br>
             <h4>ORGANISASI PROFESI</h4>
             <ul>
               <li>Anggota Perbankin Sulut
@@ -145,24 +150,22 @@
                   <li>Ketua Komisi Pemb GMIM Petra Sawangan Tombulu</li>
                   <li>Ketua Umum Panitia KPA Sinode GMIM Bumi Perkemahan Leilem</li>
                 </ul>
+           </div>
+
+              <div id="menu4" class="container tab-pane animated fadeInLeft"><br>
               </div>
 
-              <div id="menu4" class="container tab-pane fade"><br>
-
+              <div id="menu5" class="container tab-pane animated fadeInLeft"><br>
               </div>
 
-              <div id="menu5" class="container tab-pane fade"><br>
-
+              <div id="menu6" class="container tab-pane animated fadeInLeft"><br>
               </div>
 
-              <div id="menu6" class="container tab-pane fade"><br>
-
+              <div id="menu7" class="container tab-pane animated fadeInLeft"><br> 
               </div>
 
-              <div id="menu7" class="container tab-pane fade"><br> 
-
-              </div>
             </div>
           </div>
         </div>
       </div>
+      </section>
