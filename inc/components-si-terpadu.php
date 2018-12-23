@@ -1,5 +1,5 @@
 <section class="" id="si-terpadu">
-   <div class="container">
+   <div class="container wow fadeInDown">
         <div class="center fadeInDown">
             <h2>SISTEM INFORMASI TERPADU</h2>
         </div>

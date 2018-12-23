@@ -1,6 +1,6 @@
 
-<section id="suara-anda">
-   <div class="container">
+<section class="wow fadeInDown" id="suara-anda">
+   <div class="container wow fadeInDown">
       <div class="center">
          <h2>SUARA ANDA</h2>
          <p>Pengunjung yang terhormat, jika anda memiliki pertanyaan, kritikan, ataupun ucapan untuk Pemerintah Kabupaten Minahasa silahkan berikan "Suara Anda" <a href="#">disini.</a> 
@@ -12,7 +12,7 @@
       </div>
    </div>
 
-   <div class="container">
+   <div class="container wow fadeInDown">
       <div class="suara-anda-slider owl-carousel owl-theme">
          
          <div class="single-slide">

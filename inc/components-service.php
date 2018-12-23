@@ -1,13 +1,8 @@
-<section class="center" id="welcome">
-   <h6 class="animation animated-item-1">Selamat Datang di website </h6>
-   <h3 class="animation animated-item-2">Pemerintah Kabupaten</h3>
-   <h1 class="animation animated-item-2">MINAHASA</h1>
-   <a class="btn-slide animation animated-item-3" href="<?=BASE_URL.'/pages/'.$this->e($pages['visi-dan-misi']);?>">Visi & Misi</a>
-</section>
-
+<!-- INFO PANEL -->
 <section id="service">
-    <div class="container wow fadeInDown">
-        <div class="row">
+    <div class="row text-center">
+        <div class="col-xs-6 col-xs-offset-3 service">
+          <div class="row">
             <div class="col-xs-4 item animation animated-item-4 fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                 <div class="service-wrap">
                     <a href="#nomor-telepon-penting">
@@ -17,31 +12,26 @@
                     </a>
                 </div>
             </div>
-            <!--/.col-xs-4-->
             <div class="col-xs-4 item animation animated-item-4 fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                 <div class="service-wrap">
-                    <a href="">
+                    <a href="#nomor-telepon-penting">
                         <div class="capt">
-                            <h2><span class="icon"><i class="fa fa-handshake-o"></i></span> Layanan Publik</h2>
+                        <h2><span class="icon"><i class="fa fa-handshake-o"></i></span> Layanan Publik</h2>
                         </div>
                     </a>
                 </div>
             </div>
-            <!--/.col-xs-4-->
             <div class="col-xs-4 item animation animated-item-4 fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                 <div class="service-wrap">
-                    <a href="#suara-anda">
+                    <a href="#nomor-telepon-penting">
                         <div class="capt">
-                            <h2><span class="icon"><i class="fa fa-commenting"></i></i></span> Suara Anda</h2>
+                        <h2><span class="icon"><i class="fa fa-commenting"></i></i></span> Suara Anda</h2>
                         </div>
                     </a>
                 </div>
             </div>
-            <!--/.col-xs-4-->
-
+          </div>
         </div>
-        <!--/.row-->
-    </div>
-    <!--/.container-->
+      </div>
 </section>
-<!--/#service-->
+<!-- AKHIR SERVICE -->
