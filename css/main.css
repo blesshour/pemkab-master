@@ -119,6 +119,13 @@ body>section {
     padding: 70px 0;
 }
 
+#featured-news,
+#si-terpadu,
+#socmed,
+#suara-anda {
+    padding: 100px 0;
+}
+
 .center {
     text-align: center;
 }
@@ -138,6 +145,8 @@ body>section {
     background-color: transparent !important;
     margin-bottom: 0;
 }
+
+
 
 @-webkit-keyframes scaleIn {
     0% {
@@ -293,7 +302,170 @@ body>section {
 }
 
 /***********************
-********* Footer ******
+********* Pic & Banner Slider ******
+************************/
+
+#headslider {
+    position: relative;
+}
+
+.no-margin {
+    margin: 0;
+    padding: 0;
+}
+
+#headslider .carousel .carousel-content {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 28px;
+}
+
+#headslider .carousel .slide-margin {
+    margin-top: 140px;
+}
+
+#headslider .carousel h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    color: #fff;
+}
+
+#headslider .carousel .btn-slide {
+    padding: 0 30px;
+    line-height: 42px;
+    background: #EC5538;
+    color: #fff;
+    border-radius: 4px;
+    margin-top: 40px;
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 10px;
+    border: 1px solid #EC5538;
+}
+
+#headslider .carousel .btn-slide.white {
+    border: 1px solid rgba(255, 255, 255, 0.44);
+    background: rgba(255, 255, 255, 0.26);
+    color: #fff;
+}
+
+#headslider .carousel .slider-img {
+    text-align: right;
+    position: absolute;
+}
+
+#headslider .carousel .item {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0 !important;
+    opacity: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    display: block !important;
+    height: 730px;
+    -webkit-transition: opacity ease-in-out 500ms;
+    transition: opacity ease-in-out 500ms;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#headslider .carousel .item:first-child {
+    top: auto;
+    position: relative;
+}
+
+#headslider .carousel .item.active {
+    opacity: 1;
+    -webkit-transition: opacity ease-in-out 500ms;
+    transition: opacity ease-in-out 500ms;
+    z-index: 1;
+}
+
+#headslider .prev,
+#headslider .next {
+    position: absolute;
+    top: 50%;
+    background-color: #EC5538;
+    color: #fff;
+    display: inline-block;
+    margin-top: -25px;
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    z-index: 5;
+}
+
+#headslider .prev:hover,
+#headslider .next:hover {
+    background-color: #000;
+}
+
+#headslider .prev {
+    left: 10px;
+}
+
+#headslider .next {
+    right: 10px;
+}
+
+#headslider .carousel-indicators {
+    margin: 0;
+    left: 0;
+    width: 100%;
+    bottom: 80px;
+}
+
+#headslider .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    margin: 0 5px;
+    position: relative;
+    border: 1px solid #fff;
+}
+
+#headslider .carousel-indicators li.active {
+    background-color: #EC5538;
+    border: 1px solid #EC5538
+}
+
+#headslider .active .animation.animated-item-1 {
+    -webkit-animation: fadeInUp 300ms linear 300ms both;
+    animation: fadeInUp 300ms linear 300ms both;
+}
+
+#headslider .active .animation.animated-item-2 {
+    -webkit-animation: fadeInUp 300ms linear 600ms both;
+    animation: fadeInUp 300ms linear 600ms both;
+}
+
+#headslider .active .animation.animated-item-3 {
+    -webkit-animation: fadeInUp 300ms linear 900ms both;
+    animation: fadeInUp 300ms linear 900ms both;
+}
+
+#headslider .active .animation.animated-item-4 {
+    -webkit-animation: fadeInUp 300ms linear 1200ms both;
+    animation: fadeInUp 300ms linear 1200ms both;
+}
+
+/***********************
+********* Welcome & Service******
 ************************/
 #welcome {
     background-image: linear-gradient(#666462, #fff);
@@ -353,16 +525,18 @@ body>section {
 ********* Service ******
 ************************/
 
+/* Info Panel */
+.service {
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+	border-radius: 12px;
+    background-color: white;
+    z-index: 99999;
+    margin-top: -100px;
+    position: relative;
+}
+
 #service {
-    padding: 1em;
-}
-
-#service .service-wrap {
-    margin: auto;
-}
-
-#service .service-wrap .item {
-    margin: auto;
+    margin-bottom: -140px;
 }
 
 #service .service-wrap .icon {
@@ -378,7 +552,6 @@ body>section {
     -webkit-transition: .4s;
     transition: .4s;
     float: left;
-    margin-right: 10px;
 }
 
 #service .service-wrap:hover .icon {
@@ -387,106 +560,18 @@ body>section {
     background-color: #EC5538;
 }
 
-#service .service-wrap .capt {
-    margin: auto;
-    padding: 0 60px 0 70px;
-}
 
 #service .service-wrap .capt h2 {
     color: #333;
-    padding: 7px 0 0 5px;
+    /* padding: 7px 0 0 5px; */
     line-height: 40px;
+    margin: 10px 0 10px 0;
 }
 
 
 #service .animation.animated-item-4 {
     -webkit-animation: fadeInUp 300ms linear 1200ms both;
     animation: fadeInUp 300ms linear 1200ms both;
-}
-
-/***********************
-********* Pic & Banner Slider ******
-************************/
-#main-sliders {
-    background-image: linear-gradient(#fff, #fff, #e94840);
-    padding-bottom: 5em;
-}
-
-#main-sliders .padding {
-    padding: 5px;
-}
-
-#main-sliders .single-work {
-    padding: 0;
-}
-
-#main-sliders .item {
-    position: relative;
-    overflow: hidden;
-}
-
-#main-sliders .item img {
-    min-width: 100%;
-    height: 500px;
-}
-
-#main-sliders .item .item-inner {
-    top: 0;
-    background: transparent;
-    opacity: .8;
-    width: 100%;
-    border-radius: 0;
-    margin-bottom: 0;
-}
-
-#main-sliders .item .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    border-radius: 0;
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    vertical-align: middle;
-    -webkit-transition: opacity 500ms;
-    transition: opacity 500ms;
-    padding: 30px;
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-#main-sliders .hrbanner .item  > img {
-    width: 100%;
-    height: auto;
-}
-
-#main-sliders .item .overlay .preview {
-    color: #fff;
-    height: 50px;
-    width: 50px;
-    background-color: #da251d;
-    padding: 5px;
-}
-
-#main-sliders .item:hover .overlay {
-    opacity: 1;
-}
-
-
-
-#main-sliders .hrbanner .item img {
-    height: auto;
 }
 
 
@@ -524,7 +609,6 @@ body>section {
 ************************/
 
 #featured-news{
-    padding-top: 1em;
     background: linear-gradient(#e94840,#fff);
 }
 
@@ -557,7 +641,6 @@ body>section {
 
 .post-slide .sbs-slide img{
     width: 100%;
-    height: 400px;
     transform: scale(1);
     transition: all 1s ease-in-out 0s;
     overflow: hidden;
@@ -631,10 +714,6 @@ body>section {
     background: linear-gradient(#fff, #fff);
 }
 
-#si-terpadu .center {    
-    padding-bottom: 2em;
-}
-
 #si-terpadu .box {
     padding: 30px;
     margin-bottom: 40px;
@@ -681,9 +760,7 @@ body>section {
     background: linear-gradient( #fff, #fdf751, #fff500, #fdf751, #fff);
 }
 
-#suara-anda .center {
-    padding-bottom: 2em;
-}
+
 
 #suara-anda .box {
     margin: auto;
@@ -1049,10 +1126,6 @@ body>section {
     margin-top: 50px;
 }
 
-.kegiatan-unggulan {
-    padding: 7em;
-}
-
 /* Akhir Visi Misi*/
 
 /* Sejarah */
@@ -1153,10 +1226,6 @@ body>section {
 
 }
 
-.peta {
-    padding-bottom: 7em;
-}
-
 /*Ahir Peta dan Topografi */
 
 
@@ -1172,10 +1241,6 @@ body>section {
     line-height: 1.5;
     padding-bottom: 20px;
     
-}
-
-.arti-lambang-full {
-    padding-bottom: 7em;
 }
 
 /*************************
@@ -2008,6 +2073,39 @@ ul.sidebar-gallery {
 .sidebar-widgets-wrap .widget > h4 { letter-spacing: 1px; }
 
 .widget p:not(.lead) { font-size: 14px; }
+
+/* Using panels to display blog date */
+.panel.date {
+    margin: 0px;
+    width: 50px;
+    text-align: center;
+}
+
+.panel.date .month {
+    padding: 2px 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.panel.date .day {
+    padding: 3px 0px;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.sidebar-ann {
+    margin: auto;
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    -webkit-box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
+            box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
 
 /* ----------------------------------------------------------------
     Social Icons
