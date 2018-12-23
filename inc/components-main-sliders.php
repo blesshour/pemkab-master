@@ -2,7 +2,7 @@
    <div class="container">
       <div class="row padding">
 
-         <div class="col-md-9">
+         <div class="col-sm-9">
             <div class="pic-slider owl-carousel">
                
                <div class="item">
@@ -24,29 +24,13 @@
 
             </div>
          </div>
-         <!-- ./end-of-col-md-9 -->
+         <!-- ./end-of-col-sm-9 -->
 
-         <div class="col-md-3">
-            <div class="small-banner-slider owl-carousel">
-               <div class="item">
-                  <img class="img-responsive" src="<?=$this->asset('/images/uploads/59.jpg')?>" alt="">
-                  <div class="overlay">
-                        <div class="item-inner">
-                           <a class="preview" href="<?=$this->asset('/images/uploads/59.jpg')?>" rel="prettyPhoto">this is the picture caption, Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, possimus?</a>
-                        </div>
-                  </div>
-               </div>
-               <div class="item">
-                  <img class="img-responsive" src="<?=$this->asset('/images/uploads/duka.jpg')?>" alt="">
-                  <div class="overlay">
-                        <div class="item-inner">
-                           <a class="preview" href="<?=$this->asset('/images/uploads/duka.jpg')?>" rel="prettyPhoto">this is the picture caption, Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, possimus?</a>
-                        </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- ./end-of-col-md-3 -->
+         <aside class="col-sm-3">
+                <!-- Insert Sidebar -->
+                <?=$this->insert('sidebar-banners');?>
+			</aside> 
+         <!-- ./end-of-col-sm-3 -->
     </div>
     <!-- ./end-of-row -->
 
@@ -71,6 +55,3 @@
    <!-- ./end-of-container -->
 </section>
 <!-- ./end-of-main-sliders -->
-
-
-
