@@ -120,6 +120,7 @@ jQuery(function ($) {
     //featured-news
     $('.news2').owlCarousel({
         animateOut: 'fadeOut',
+        autoHeight: true,
         loop:true,
         margin:1,
         items: 1,
@@ -140,13 +141,24 @@ jQuery(function ($) {
                 items: 1
             },
             768: {
-                items: 3
+                items: 2
             },
             992: {
-                items: 4
+                items: 2
             }
         }
     });
+
+    $('.sidebar-ann').owlCarousel({
+        loop:true,
+        margin:10,
+        dots: true,
+        autoHeight: true,
+        items:1,
+        autoplay:true,
+        autoplayTimeout:4000,
+        autoplayHoverPause:true
+    })
 });
 
  $(function(){	
