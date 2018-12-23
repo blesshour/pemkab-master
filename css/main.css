@@ -1126,6 +1126,10 @@ body>section {
     margin-top: 50px;
 }
 
+.kegiatan-unggulan {	
+    padding: 7em;	
+}
+
 /* Akhir Visi Misi*/
 
 /* Sejarah */
@@ -1226,6 +1230,10 @@ body>section {
 
 }
 
+.peta {	
+    padding-bottom: 7em;	
+}
+
 /*Ahir Peta dan Topografi */
 
 
@@ -1242,6 +1250,11 @@ body>section {
     padding-bottom: 20px;
     
 }
+
+.arti-lambang-full {	
+    padding-bottom: 7em;	
+}	
+
 
 /*************************
 ********* Contact Us CSS ******
