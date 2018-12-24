@@ -1,20 +1,20 @@
 
 <section class="" id="featured-news">
-    <aside class="col-sm-12">
+    <aside class="col-sm-12 wow zoomIn">
         <?=$this->insert('sidebar-hrbanner');?>
     </aside>
 
-    <div class="container wow fadeInDown">
+    <div class="container">
         <div class="center fadeInDown">
             <h2>INFO & BERITA</h2>
         </div>
 
         <div class="row">
-            <aside class="col-sm-3">
+            <aside class="col-sm-3 wow fadeInLeft">
                 <?=$this->insert('sidebar-banners2');?>
                 <?=$this->insert('sidebar-banners');?>
             </aside>
-            <div class="col-sm-6">
+            <div class="col-sm-6 wow zoomIn">
                 <div class="row">
                     <div class="col-sm-12 bigtwo">
                         <div class="news2 owl-carousel">
@@ -79,7 +79,7 @@
                     </div>            
                 </div>
             </div>
-            <aside class="col-sm-3">
+            <aside class="col-sm-3 wow fadeInRight">
                 <?=$this->insert('sidebar-ann');?>
                 <?=$this->insert('sidebar-agenda');?>
             </aside>
