@@ -5,19 +5,19 @@
         <div class="row">
             <div class="col-md-9">
                     <h2><?=$post['title'];?></h2>
+                    <div class="entry-meta">
+                        <i class="fa fa-calendar">&nbsp;</i><span id="publish_date" class="padding"><?=$this->pocore()->call->podatetime->tgl_indo($post['date']);?></span>
+                        <span class="padding"><i class="fa fa-user"></i> <a href="javascript:void(0)"> <?=$this->post()->getAuthorName($post['editor']);?></a></span>
+                        <span><i class="fa fa-comment"></i> <a href="#comments"><?=$this->post()->getCountComment($post['id_post']);?> <?=$this->e($front_comment);?></a></span>
+                    </div>
+
                     <div class="blog-item">
-                        <img class="img-responsive img-blog" src="<?=BASE_URL;?>/<?=DIR_CON;?>/uploads/<?=$post['picture'];?>" width="100%" alt="" />
+                        <img class="img-responsive img-blog gambar" src="<?=BASE_URL;?>/<?=DIR_CON;?>/uploads/<?=$post['picture'];?>" width="100%" alt="" />
                         <?php if ($post['picture_description'] != '') { ?>
                         <p class="text-center" style="padding:10px; background:#eee;"><i><?=$post['picture_description'];?></i></p>
                         <?php } ?>
                         <div class="row">  
-                            <div class="col-xs-12 col-sm-2 text-center">
-                                <div class="entry-meta">
-                                    <span id="publish_date"><?=$this->pocore()->call->podatetime->tgl_indo($post['date']);?></span>
-                                    <span><i class="fa fa-user"></i> <a href="javascript:void(0)"> <?=$this->post()->getAuthorName($post['editor']);?></a></span>
-                                    <span><i class="fa fa-comment"></i> <a href="#comments"><?=$this->post()->getCountComment($post['id_post']);?> <?=$this->e($front_comment);?></a></span>
-                                </div>
-                            </div>
+
                             <div class="col-xs-12 col-sm-10 blog-content">
                                 <?=htmlspecialchars_decode(html_entity_decode($post['content']));?>
                                 <div class="post-tags">
