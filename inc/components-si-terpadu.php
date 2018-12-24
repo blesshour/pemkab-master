@@ -1,11 +1,11 @@
 <section class="" id="si-terpadu">
-   <div class="container wow fadeInDown">
+   <div class="container">
         <div class="center fadeInDown">
             <h2>SISTEM INFORMASI TERPADU</h2>
         </div>
 
         <div class="row">
-            <div class="col-lg-3 col-sm-6 col-xs-12 text-center">
+            <div class="col-lg-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="1000ms">
                 <div class="box fadeInRight">
                   <a href="">
                      <div class="pull-left icon text-center">
@@ -19,7 +19,7 @@
                 </div>
             </div>
             
-            <div class="col-lg-3 col-sm-6 col-xs-12 text-center">
+            <div class="col-lg-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="1500ms">
                 <div class="box fadeInRight">
                   <a href="">
                      <div class="pull-left icon col-3 text-center">
@@ -33,7 +33,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 col-sm-6 col-xs-12 text-center">
+            <div class="col-lg-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="2000ms">
                 <div class="box fadeInRight">
                   <a href="">
                         <div class="pull-left icon col-3 text-center">
@@ -49,7 +49,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 col-sm-6 col-xs-12 text-center">
+            <div class="col-lg-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="2500ms">
                 <div class="box fadeInRight">
                   <a href="">
                      <div class="pull-left icon col-3 text-center">
