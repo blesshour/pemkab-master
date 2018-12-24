@@ -176,6 +176,7 @@ body>section {
 
 .page-title{
     padding: 60px 0;
+    background-image: linear-gradient(#d6625b, #fff);
 }
 
 .page-title h1{
@@ -608,13 +609,14 @@ body>section {
 ********* Featured-news ******
 ************************/
 
+
 #featured-news{
     background: linear-gradient(#e94840,#fff);
 }
 
 #featured-news h2{
     color: #fff;
-    padding-bottom: 20px;
+    padding: 20px 0 20px 0;
 }
 
 .post-slide{
@@ -1095,7 +1097,7 @@ body>section {
 }
 
 .kegiatan-unggulan {	
-    padding: 7em;	
+    padding-bottom: 7em;	
 }
 
 /* Akhir Visi Misi*/
@@ -1289,19 +1291,10 @@ textarea#message {
 **************************/
 
 #galeri{
+    padding-top: 0px;
     margin: auto;
 }
 
-#galeri .page-title{
-    padding: 0;
-
-}
-
-#galeri .page-title h1{
-    color: #da251d;
-    padding: 0;
-
-}
 
 .galeri-items,
 .galeri-filter {
@@ -1470,14 +1463,130 @@ textarea#message {
 ********* Berita css ******
 **************************/
 
+#berita {
+    padding-top: 0px;
+}
+
+#berita .page-title {
+    padding-top: 70px;
+}
+
+#berita .page-title h1{
+    color: #da251d;
+}
+
 #berita .item {
     position: relative;
-    overflow: hidden;
 }
 
 #berita .item img {
     width: 100%;
     height: auto;
+}
+
+#berita aside {
+    padding-right: 0px;
+}
+
+#berita .item {
+    margin-bottom: 20px;
+}
+
+#berita .post-slide12{
+    margin-bottom:2em;
+}
+
+#berita .post-slide12 .post-img{
+    position:relative;
+    width:50%;
+    height: auto;
+    padding: 0px 0px 0px 10px;
+}
+
+
+#berita .post-slide12 .post-img img{
+    width:100%;
+    height: auto;
+}
+#berita .post-slide12 .post-review{
+    padding: 0px 12px;
+    width: 50%;
+}
+#berita .post-slide12 .post-title{
+    font-size: 24px;
+    line-height: 24px;
+    margin:0 0 5px 0;
+}
+
+#berita .post-slide12 .post-date{
+    display:block;
+    font-size:15px;
+    font-weight:700;
+    margin-bottom:5px;
+}
+
+#berita .post-slide12 .post-review a {
+    color: #808080;
+}
+
+#berita .post-slide12 .post-review a:hover {
+    color: #da251d;
+}
+
+/*************************
+********* Pagination ******
+**************************/
+
+#berita ul.pagination{
+    margin-top: 40px;
+}
+#berita ul.pagination>li>a {
+    font-size: 16px;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    margin: 0 5px;
+    background-color: transparent;
+}
+
+#berita ul.pagination>li>a i {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#berita ul.pagination>li.active>a,
+#berita ul.pagination>li:hover>a {
+    background-color: #EC5538 ;
+    color: #fff;
+}
+
+#berita ul.pagination>li:first-child > a, 
+#berita ul.pagination>li:last-child > a{
+    background-color: transparent;
+    color: #989898;
+    -webkit-transform: translateX(-200px);
+    transform: translateX(-200px)
+}
+
+#berita ul.pagination>li:first-child > a:hover, 
+#berita ul.pagination>li:last-child > a:hover{
+    background-color: transparent;
+    color: #EC5538;
+}
+
+
+#berita ul.pagination>li:first-child > a{
+    background-color: transparent;
+    color: #989898;
+    -webkit-transform: translateX(-200px);
+    transform: translateX(-200px)
+}
+ 
+#berita ul.pagination>li:last-child > a{
+    background-color: transparent;
+    color: #989898;
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px)
 }
 
 /*********************
@@ -1710,7 +1819,7 @@ ul.faq li > div h3 {
   color: #888;
 }
 
-ul.pagination > li > a {
+#berita ul.pagination > li > a {
   border: 1px solid #F1F1F1;
   margin-right:5px;
   border-radius: 5px;
@@ -1718,13 +1827,13 @@ ul.pagination > li > a {
   padding: 5px 14px;
 }
 
-ul.pagination > li > a i{
+#berita ul.pagination > li > a i{
   margin-left:5px;
   margin-right:5px;
 }
 
-ul.pagination > li.active > a, 
-ul.pagination > li:hover > a {
+#berita ul.pagination > li.active > a, 
+#berita ul.pagination > li:hover > a {
   background-color: #c52d2f !important;
   border-color: #c52d2f !important;
   color: #fff;
@@ -2078,13 +2187,13 @@ ul.sidebar-gallery {
     margin: auto;
     width: 100%;
     padding: 30px;
-    margin-bottom: 40px;
-    background-color: #fff;
-    -webkit-box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
-            box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    border-radius: 20px;
+}
+
+.agenda {
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+
 }
 
 
