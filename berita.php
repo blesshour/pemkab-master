@@ -1,15 +1,14 @@
 <?=$this->layout('index');?>
-
+<div class="container-fluid berita-title">
+    <div class="page-title">
+        <h1>BERITA & INFO</h1>
+    </div>
+<div>
+    
 <section id="berita">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            <aside class="col-md-3">
-                <!-- Insert Sidebar -->
-                <?=$this->insert('sidebar-banners');?>
-			</aside> 
-            <!-- ./end of col-md-3 (right widgets) -->
-
-            <div class="col-md-6">
+            <div class="col-sm-8">
                 <div class="news2 owl-carousel">
                     <?php
                         $sliders_post = $this->post()->getPost('8', 'DESC', WEB_LANG_ID);
@@ -19,9 +18,6 @@
                         <div class="item post-slide">
                             <div class="post-img sbs-slide">
                                 <img src="<?=BASE_URL;?>/<?=DIR_CON;?>/uploads/<?=$slider_post['picture'];?>" alt="">
-                                <div class="cat-badge">
-                                <h4><span class="label label-warning"><?=$slider_category;?></span></h4>
-                                </div>
                             </div>
                             <div class="post-content">
                                 <h3 class="post-title"><a href="<?=BASE_URL;?>/detailpost/<?=$slider_post['seotitle'];?>"><?=$slider_post['title'];?></a></h3>
@@ -43,40 +39,54 @@
                     <?php
                         $sliders_post = $this->post()->getPost('8', 'DESC', WEB_LANG_ID);
                         foreach($sliders_post as $slider_post){
-                            $slider_category = $this->category()->getCategory($slider_post['id_post'], WEB_LANG_ID);
                     ?>
-                    <div class="col-md-6">
-                        <div class="post-slide">
-                            <div class="post-img hrslide">
-                                <img src="<?=BASE_URL;?>/<?=DIR_CON;?>/uploads/<?=$slider_post['picture'];?>" alt="">
-                                <div class="cat-badge">
-                                <h4><span class="label label-warning"><?=$slider_category;?></span></h4>
+                    <div class="col-sm-12 item">
+                        <div class="post-slide12">
+                            <div class="row">
+                                <div class="col-sm-4 col-xs-12 post-img">
+                                    <img src="<?=BASE_URL;?>/<?=DIR_CON;?>/uploads/<?=$slider_post['picture'];?>" alt="">
                                 </div>
-                            </div>
-                            <div class="post-content">
-                                <h3 class="post-title"><a href="<?=BASE_URL;?>/detailpost/<?=$slider_post['seotitle'];?>"><?=$slider_post['title'];?></a></h3>
-                                <ul class="post-bar list-inline">
-                                    <li><i class="fa fa-calendar"></i> June 5, 2016</li>
-                                    <li>
-                                        <i class="fa fa-folder"></i>
-                                        <a href="#">Mockup</a>
-                                        <a href="#">Graphics</a>
-                                        <a href="#">Flayers</a>
-                                    </li>
-                                </ul> 
+                                <div class="col-sm-8 col-xs-12 post-review">
+                                    <h3 class="post-title"><a href="<?=BASE_URL;?>/detailpost/<?=$slider_post['seotitle'];?>"><?=$slider_post['title'];?></a></h3>
+                                    <span class="post-date"><i class="fa fa-calendar"></i> Nov 10,2015</span>
+                                    <ul class="post-bar list-inline">
+                                        <li>
+                                            <i class="fa fa-folder"></i>
+                                            <a href="#">Mockup</a>
+                                            <a href="#">Graphics</a>
+                                            <a href="#">Flayers</a>
+                                        </li>
+                                    </ul> 
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <hr>
                     <?php } ?>        
                 </div>
             </div>
 
-            <!-- ./end of col-md-6 (main) -->
+            <!-- ./end of col-sm-6 (main) -->
 
-            <aside class="col-md-3">
+            <aside class="col-sm-4">
                 <!-- Insert Sidebar -->
+                <?=$this->insert('sidebar-ann');?>
                 <?=$this->insert('sidebar');?>
+
             </aside> 
+
+            <div class="col-sm-12 text-center">
+                <ul class="pagination pagination-lg">
+                    <li><a href="#"><i class="fa fa-long-arrow-left"></i></a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#"><i class="fa fa-long-arrow-right"></i></a></li>
+                </ul>
+                <!--/.pagination-->
+            </div>
                             
         </div> 
         <!-- ./end-row -->

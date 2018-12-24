@@ -1,11 +1,8 @@
 <?=$this->layout('index');?>
-
+<div class="page-title">
+    <h1>Suara Anda</h1>
+</div>
 <section id="page-suara-anda">
-    <div class="page-title">
-        <h1>Suara Anda</h1>
-        <div class="status alert alert-success" style="display: none" role="alert">
-        </div>
-    </div>
     <div class="container">
         <div class="row contact-wrap">
             <div class="col-md-6 col-sm-12">
