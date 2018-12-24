@@ -103,6 +103,17 @@
   }
   /*AkhirSelayangPandang*/
 
+  /* berita */
+
+  .berita-title .page-title h1 {
+    font-size: 300%;
+  }
+
+  #berita .post-slide12 .post-review h3,
+  {
+    font-size: 130%;
+  }
+
 }
 
 
@@ -206,8 +217,6 @@
     margin-bottom: 20px;
   }
 
-
-
   /*Selayang Pandang */
 
     /*Visi dan Misi*/
@@ -272,25 +281,42 @@
 
   /*AkhirGalery*/
 
+  /* berita */
+
+  .berita-title .page-title h1 {
+    font-size: 250%;
+    }
+
+  #berita .post-slide12 .post-review h3,
+  #berita .post-slide12 .post-review span,
+  #berita .post-slide12 .post-review ul li {
+    font-size: 100%;
+  }
 }
 
 /* xs */
 @media (max-width: 767px) and (min-width: 481px){
+  body, html {
+    overflow: auto!important;
+    max-height: 100% !important;
+  }
 
   .navbar-nav>li{
-      display: block;
-      margin: 0;
-      padding-bottom: 0;
+    display: block;
+    margin: 0;
+    padding-bottom: 0;
   }
   .navbar-inverse .navbar-nav>li>a{
-      display: block;
+    display: block;
   }
   .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus{
-      background-color: transparent;
+    background-color: transparent;
   }
-    .navbar-inverse .navbar-brand{
-      margin-bottom: 10px;
+
+  .navbar-inverse .navbar-brand{
+    margin-bottom: 10px;
   }
+
   .nav-tabs > li.active > a:after{
     display: none;
   }
@@ -305,7 +331,6 @@
 
   .visi h1 {
     font-size: 25px;
-    
   }
 
   .misi .misi-wrap p {
@@ -318,7 +343,6 @@
     width: 180px;
     height: 240px;
     margin-bottom: 30px;
-
   }
 
   .arti-lambang {
@@ -354,7 +378,6 @@
     #page-suara-anda .page-title h1 {
     font-size: 40px;
   }
-
 
   /* Galeri */
   #galeri .page-title h1{
@@ -407,12 +430,40 @@
     padding: 20px 0 20px 0;
   }
 
+   /* berita */
+   #berita {
+    padding-top: 20px;
+  }
+  
+  #berita .post-content {
+    padding-bottom: 0px;
+  }
+
+  #berita h3 {
+    font-size: 100%;
+  }
+
+  .berita-title .page-title h1 {
+    font-size: 200%;
+    }
+
+  #berita .page-title {
+    padding-bottom: 20px;
+  }
+
+  #berita .panel {
+    display: none;
+  }
+
+  #berita .post-review h3,
+  #berita .post-review p {
+    font-size: 100%;
+  }
 }
 
 /* XS Portrait */
 @media (max-width: 480px) and (min-width: 366px) {
   body, html {
-
     overflow: auto!important;
     max-height: 100% !important;
   }
@@ -481,13 +532,14 @@
     width: 100%;
     padding: 5px;
   }
+
   #service .service-wrap .icon {
-      width: 30px;
-      height: 30px;
-      text-align: center;
-      line-height: 30px;
-      font-size: 100%;
-      margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 100%;
+    margin-right: 5px;
   }
 
   #service .service-wrap .icon i{
@@ -495,21 +547,19 @@
   }
 
   #service .service-wrap .capt h2 {
-      font-size: 100%;
-      margin: 0;
-      padding: 0;
-      line-height: 30px;
-      text-align: left;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+    text-align: left;
   }
 
   #service .service-wrap .capt {
     padding: 0;
-}
+  }
 
 
   /* featured-news */
-
-
 
   .post-slide .hrslide img{
     width: 100%;
@@ -598,6 +648,30 @@
     height: 50px;
     font-size: 10px
   }
+
+  /* berita */
+  #berita {
+    padding-top: 20px;
+  }
+
+  .berita-title .page-title h1 {
+    font-size: 200%;
+    }
+
+  #berita .page-title {
+    padding-bottom: 20px;
+  }
+
+  #berita .panel {
+    display: none;
+  }
+
+  #berita .post-slide12 .post-review h3,
+  #berita .post-slide12 .post-review span,
+  #berita .post-slide12 .post-review ul li {
+    font-size: 100%;
+  }
+
 }
 
 
@@ -613,6 +687,7 @@
     padding: 0;
     margin: 0;
   }
+
   .navbar-brand > img {
     max-width: 80%;
     margin: 0 0 10px 20px;
@@ -656,7 +731,6 @@
   }
 
   /* service */
-
   #service {
     margin-bottom: -160px;
   }
@@ -673,12 +747,12 @@
     padding: 5px;
   }
   #service .service-wrap .icon {
-      width: 30px;
-      height: 30px;
-      text-align: center;
-      line-height: 30px;
-      font-size: 100%;
-      margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 100%;
+    margin-right: 5px;
   }
 
   #service .service-wrap .icon i{
@@ -695,12 +769,32 @@
 
   #service .service-wrap .capt {
     padding: 0;
-}
+  }
 
+  /* berita */
+  #berita {
+    padding-top: 20px;
+  }
+
+  .berita-title .page-title h1 {
+    font-size: 200%;
+    }
+
+  #berita .page-title {
+    padding-bottom: 20px;
+  }
+
+  #berita .panel {
+    display: none;
+  }
+
+  #berita .post-slide12 .post-review h3,
+  #berita .post-slide12 .post-review span,
+  #berita .post-slide12 .post-review ul li {
+    font-size: 100%;
+  }
 
   /* featured-news */
-
-
 
   .post-slide .hrslide img{
     width: 100%;
@@ -787,10 +881,8 @@
 }
 
 
-/* */
-@media (max-width: 320px) and (min-width: 120px){
+@media (max-width: 320px) {
   body, html {
-
     overflow: auto!important;
     max-height: 100% !important;
   }
@@ -810,6 +902,11 @@
     margin-top: 10px 0 10px 0;
   }
 
+  .navbar-nav>li {
+    padding-bottom: 0px;
+    margin-left: 5px;
+  }
+
   /* welcome & service */
   #welcome {
     padding: 20px 0 0 20px;
@@ -882,13 +979,10 @@
 
   #service .service-wrap .capt {
     padding: 0;
-}
+  }
 
 
   /* featured-news */
-
-
-
   .post-slide .hrslide img{
     width: 100%;
     height: auto;
@@ -971,5 +1065,27 @@
 
   /*AkhirGaleri*/
 
+  /* berita */
+  #berita {
+    padding-top: 20px;
+  }
+
+  .berita-title .page-title h1 {
+    font-size: 200%;
+    }
+
+  #berita .page-title {
+    padding-bottom: 20px;
+  }
+
+  #berita .panel {
+    display: none;
+  }
+
+  #berita .post-slide12 .post-review h3,
+  #berita .post-slide12 .post-review span,
+  #berita .post-slide12 .post-review ul li {
+    font-size: 100%;
+  }
 }
 
