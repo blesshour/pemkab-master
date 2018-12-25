@@ -1,10 +1,13 @@
 <?=$this->layout('index');?>
 
+<div class="container-fluid">
+    <div class="page-title">
+        <h1>Galeri</h1>
+    </div>
+</div>
+
 <section id="galeri">
     <div class="container">
-        <div class="page-title">
-            <h1>Galeri</h1>
-        </div>
         <!--/#galeri-filter-->
         
         <div class="row">
