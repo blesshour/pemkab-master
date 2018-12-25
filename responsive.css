@@ -1,0 +1,678 @@
+/* lg */ 
+@media (min-width: 1200px) {
+    .dropdown:hover .dropdown-menu {
+      display: block;
+      -webkit-animation: fadeInUp 400ms;
+      animation: fadeIn Up 400ms;
+  }
+  
+  /*--featured news--*/
+  #featured-news aside {
+    padding-bottom: 20px;
+  }
+ 
+     /* service */
+
+  #service {
+    margin-bottom: -160px;
+  }
+
+  #service .container{
+    padding-left: 0;
+  }
+
+  .service {
+    padding: 0 40px 0 40px;
+  }
+
+/*  #service .item {
+    width: 100%;
+    padding: 5px;
+  }*/
+  
+  #service .service-wrap .icon {
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      font-size: 100%;
+      margin-right: 5px;
+  }
+
+  #service .service-wrap .icon i{
+    font-size: 100%;
+  }
+
+  #service .service-wrap .capt h2 {
+      font-size: 100%;
+      margin: 0;
+      padding: 0;
+      line-height: 30px;
+      text-align: left;
+  }
+
+  #service .service-wrap .capt {
+    padding: 0;
+}
+
+
+/* ----DETAIL POST---- */
+
+.padding {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Akhir Detail Post*/
+
+}
+
+/* md */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .dropdown:hover .dropdown-menu {
+      display: block;
+      -webkit-animation: fadeInUp 400ms;
+      animation: fadeInUp 400ms;
+  }
+
+  .navbar-nav > li {
+    margin-left: 10px;
+  }
+
+  .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /*--featured news--*/
+  #featured-news aside {
+    padding-bottom: 20px;
+  }
+
+  /* service */
+  #service .service-wrap .icon {
+    width: 39px;
+    height: 39px;
+    text-align: center;
+    line-height: 39px;
+    font-size: 120%;
+  }
+
+  #service .service-wrap .icon i{
+    font-size: 100%;
+  }
+
+  #service .service-wrap .capt h2 {
+      font-size: 120%;
+      margin: 0;
+      padding: 0;
+      line-height: 39px;
+  }
+
+  #service .service-wrap .capt {
+    padding: 0 0 0 50px;
+  }
+    
+ /*Selayang Pandang */
+
+    /* Visi dan Misi */
+
+  .visi h1 {
+    font-size: 25px;
+  }
+
+  .misi .misi-wrap p {
+    font-size: 18px;    
+  }
+
+    /* Lambang dan Arti */
+  
+  .arti-lambang .arti-title {
+    font-size: 20px;
+  }
+
+  .arti-lambang .arti-deskripsi {
+    font-size: 14px;
+  }
+
+    /* Sejarah */
+
+  .tentang-minahasa .tombol {
+    margin-bottom: 20px;
+  }
+
+  .quotes .moto {
+    font-size: 30px;
+  }
+  /*AkhirSelayangPandang*/
+
+
+/* ----DETAIL POST---- */
+
+.padding {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* Akhir Detail Post*/
+
+}
+
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Make Navigation Toggle on Desktop Hover */
+  .dropdown:hover .dropdown-menu {
+      display: block;
+      -webkit-animation: fadeInUp 400ms;
+      animation: fadeInUp 400ms;
+  }
+
+  .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar-nav > li {
+    margin-left: 0;
+  }
+
+  .navbar-nav {
+    margin-top: 0;
+  }
+
+  /* header navbar */
+  .navbar-header {
+    padding: auto;
+    margin: auto;
+  }
+
+  .navbar-brand > img {
+    max-width: 100%;
+    margin: 10px 325px 0px 325px;
+  }
+
+  /* service */
+  #service .service-wrap .icon {
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 100%;
+  }
+
+  #service .service-wrap .icon i{
+    font-size: 100%;
+  }
+
+  #service .service-wrap .capt h2 {
+      font-size: 100%;
+      margin: 0;
+      padding: 0;
+      line-height: 36px;
+  }
+
+  #service .service-wrap .capt {
+    padding: 0 0 0 20px;
+  }
+  
+
+  /* main-sliders */
+
+  #main-sliders .item img {
+    min-width: 100%;
+    height: 350px;
+  }
+
+  /* featured-news */
+  .post-slide .sbs-slide img{
+    width: 100%;
+    height: 250px;
+  }
+
+  #featured-news aside {
+    padding-bottom: 20px;
+  }
+  
+  /*Selayang Pandang */
+
+    /*Visi dan Misi*/
+
+  .visi h1 {
+    font-size: 25px;
+    
+  }
+
+  .misi .misi-wrap p {
+    font-size: 18px;    
+  }
+
+    /*Lambang dan Arti */
+
+  .arti-lambang img {
+    width: 360px;
+    height: 480px;
+    margin-bottom: 30px;
+  }
+
+  .arti-lambang {
+    text-align: center;
+  }
+
+  .arti-lambang .arti-title {
+    font-size: 23px;
+  }
+
+  .arti-lambang .arti-deskripsi {
+    font-size: 17px;
+  }
+
+   /* Peta dan Topografi */
+
+  .info-peta h1 {
+    font-size: 25px;
+  }
+
+   /* Sejarah */
+
+  .tentang-minahasa .tombol {
+    margin-bottom: 20px;
+  }
+
+  .quotes .moto {
+    font-size: 30px;
+  }
+  /*AkhirSelayangPandang*/
+
+  /*Page Suara Anda*/
+    #page-suara-anda .page-title h1 {
+    font-size: 40px;
+  }
+
+  /* AkhirPageSuaraAnda */
+
+  /* Galeri */
+  #galeri .page-title h1{
+    font-size: 40px;
+  }
+
+  /*AkhirGalery*/
+
+
+/* ----DETAIL POST---- */
+
+.padding {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* Akhir Detail Post*/
+
+}
+
+/* xs */
+@media (max-width: 767px) {
+  .navbar-nav>li{
+      display: block;
+      margin: 0;
+      padding-bottom: 0;
+  }
+  .navbar-inverse .navbar-nav>li>a{
+      display: block;
+  }
+  .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus{
+      background-color: transparent;
+  }
+    .navbar-inverse .navbar-brand{
+      margin-bottom: 10px;
+  }
+  .nav-tabs > li.active > a:after{
+    display: none;
+  }
+
+    /* service */
+
+  #service {
+    margin-bottom: -160px;
+  }
+
+  #service .container{
+    padding-left: 0;
+  }
+
+  .service {
+    padding: 0 40px 0 40px;
+  }
+
+  #service .item {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  #service .service-wrap .icon {
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      font-size: 100%;
+      margin-right: 5px;
+  }
+
+  #service .service-wrap .icon i{
+    font-size: 100%;
+  }
+
+  #service .service-wrap .capt h2 {
+      font-size: 100%;
+      margin: 0;
+      padding: 0;
+      line-height: 30px;
+      text-align: left;
+  }
+
+  #service .service-wrap .capt {
+    padding: 0;
+}
+    
+  /*Selayang Pandang */
+
+  .header-selayang h1 {
+    font-size: 25px;
+  }
+
+    /*Visi dan Misi*/
+
+  .visi h1 {
+    font-size: 25px;
+    
+  }
+
+  .misi .misi-wrap p {
+    font-size: 18px;    
+  }
+
+    /*Lambang dan Arti */
+
+  .arti-lambang img {
+    width: 180px;
+    height: 240px;
+    margin-bottom: 30px;
+
+  }
+
+  .arti-lambang {
+    text-align: center;
+  }
+
+  .arti-lambang .arti-title {
+    font-size: 20px;
+  }
+
+  .arti-lambang .arti-deskripsi {
+    font-size: 14px;
+  }
+
+    /* Peta dan Topografi */
+
+  .info-peta h1 {
+    font-size: 25px;
+  }
+
+   /* Sejarah */
+
+  .tentang-minahasa .tombol {
+    margin-bottom: 20px;
+  }
+
+  .quotes .moto {
+    font-size: 30px;
+  }
+  /*AkhirSelayangPandang*/
+
+  /* Page Suara Anda */
+    
+    #page-suara-anda .page-title h1 {
+    font-size: 40px;
+  }
+
+  /* AkhirPageSuaraAnda */
+
+  /* Galeri */
+  #galeri .page-title h1{
+    font-size: 40px;
+  }
+
+  /*AkhirGalery*/
+
+/* ----DETAIL POST---- */
+
+.padding {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Akhir Detail Post*/
+
+}
+
+/* XS Portrait */
+@media (max-width: 480px) {
+  body, html {
+    /* height: 100%!important; */
+    overflow: auto!important;
+    max-height: 100% !important;
+  }
+  
+  /* header navbar */
+  .navbar-header .navbar-brand {
+    padding: 0;
+    margin: 0;
+  }
+  .navbar-brand > img {
+    max-width: 80%;
+    margin: 0 0 10px 20px;
+    padding: 0px;
+  }
+
+  .navbar-header > button {
+    margin-top: 10px 0 10px 0;
+  }
+
+  /* welcome & service */
+  #welcome {
+    padding: 20px 0 0 20px;
+    text-align: left;
+  }
+
+  #welcome .animation.animated-item-1 {
+    font-size: 100%;
+  }
+
+  #welcome .animation.animated-item-2 {
+    font-size: 200%;
+    margin-top : 10px;
+  }
+
+  #welcome > h1 {
+    margin-right: 50px;
+  }
+
+  #welcome .animation.animated-item-3 {
+    padding: 3px;
+  }
+
+  #welcome .btn-slide {
+    padding: 0 30px;
+    line-height: 20px;
+    margin-top: 5px;
+    font-size: 80%;
+    margin-right: 10px;
+    
+  }
+
+  /* service */
+
+  #service {
+    margin-bottom: -160px;
+  }
+
+  #service .container{
+    padding-left: 0;
+  }
+
+  .service {
+    padding: 0 40px 0 40px;
+  }
+
+  #service .item {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  #service .service-wrap .icon {
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      font-size: 100%;
+      margin-right: 5px;
+  }
+
+  #service .service-wrap .icon i{
+    font-size: 100%;
+  }
+
+  #service .service-wrap .capt h2 {
+      font-size: 100%;
+      margin: 0;
+      padding: 0;
+      line-height: 30px;
+      text-align: left;
+  }
+
+  #service .service-wrap .capt {
+    padding: 0;
+}
+
+  /* main-sliders */
+  #main-sliders{
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+
+  #main-sliders .item img {
+    width: 100%;
+    height: auto;
+  }
+
+  #main-sliders aside {
+    display: none;
+  }
+
+  /* featured-news */
+
+  .post-slide .hrslide img{
+    width: 100%;
+    height: auto;
+  }
+
+  .post-slide .hrslide {
+    height: auto;
+  }
+
+  #featured-news .bigtwo {
+    display: none;
+  }
+
+  /* si-terpadu */
+  #si-terpadu .box {
+    width: 300px;
+    margin: 10px auto 10px auto;
+  }
+
+   /* si-terpadu */
+   #suara-anda .box {
+    width: 300px;
+  }
+    
+  /*Selayang Pandang */
+
+    /*Visi dan Misi*/
+
+  .visi h1 {
+    font-size: 17px;
+    
+  }
+
+  .misi .misi-wrap {
+    padding-right: 0px;
+  }
+
+  .misi .misi-wrap .logo {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .misi .misi-wrap p {
+    font-size: 17px;
+    text-align: center;
+
+  }
+
+  /* Peta dan Topografi */
+
+  .info-peta h1 {
+    font-size: 17px;
+  }
+
+   /* Sejarah */
+
+  .tentang-minahasa .tombol {
+    margin-bottom: 20px;
+  }
+
+  .quotes {
+    display: none;
+  }
+  /*AkhirSelayangPandang*/
+
+  /* Page Suara Anda */
+    
+    #page-suara-anda .page-title h1 {
+    font-size: 40px;
+    }
+
+  /* AkhirPageSuaraAnda */
+
+  /* Galeri */
+  #galeri .page-title h1{
+    font-size: 40px;
+  }
+
+  /*AkhirGaleri*/
+
+/*---------- socmed ----------*/
+
+#socmed li a {
+    width: 50px;
+    height: 50px;
+    font-size: 10px;
+}
+
+
+/*---------- footer ----------*/
+.footer2 {
+  text-align: center;
+}
+
+
+/* ----DETAIL POST---- */
+
+.padding {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Akhir Detail Post*/
+
+}
