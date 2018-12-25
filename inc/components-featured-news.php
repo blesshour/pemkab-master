@@ -1,5 +1,11 @@
 
 <section class="" id="featured-news">
+    <div class="row running-text padding">
+        <div class="marquee">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptatum tempore vitae. Sed, aliquam alias. Sint dignissimos accusantium maiores numquam?</p>
+        </div>
+    </div>
+    
     <aside class="col-sm-12 wow zoomIn">
         <?=$this->insert('sidebar-hrbanner');?>
     </aside>
