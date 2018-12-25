@@ -1,23 +1,46 @@
 /* lg */ 
 @media (min-width: 1200px) {
-    .dropdown:hover .dropdown-menu {
-      display: block;
-      -webkit-animation: fadeInUp 400ms;
-      animation: fadeIn Up 400ms;
+  
+  /* ####################################### */
+  /* -------------- navbar ----------------- */
+  /* ####################################### */
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    -webkit-animation: fadeInUp 400ms;
+    animation: fadeIn Up 400ms;
   }
-    
-    #featured-news aside{
-      padding: 0px 0 20px 0;
-    }
+  
+  /* ####################################### */
+  /* ----------- featured-news ------------- */
+  /* ####################################### */
+
+  #featured-news aside{
+    padding: 0px 0 20px 0;
+  }
+
+  /* ####################################### */
+  /* ----------- detailpost ---------------- */
+  /* ####################################### */
+
+  .padding {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
  
 }
 
 /* md */
 @media (min-width: 992px) and (max-width: 1199px) {
+  
+  /* ####################################### */
+  /* -------------- navbar ----------------- */
+  /* ####################################### */
+
   .dropdown:hover .dropdown-menu {
-      display: block;
-      -webkit-animation: fadeInUp 400ms;
-      animation: fadeInUp 400ms;
+    display: block;
+    -webkit-animation: fadeInUp 400ms;
+    animation: fadeInUp 400ms;
   }
 
   .navbar-nav > li {
@@ -29,7 +52,9 @@
     padding-right: 0;
   }
 
-  /* service */
+  /* ####################################### */
+  /* -------------- service ---------------- */
+  /* ####################################### */
 
   #service {
     margin-bottom: -160px;
@@ -70,10 +95,10 @@
   #featured-news aside{
     padding: 0px 0 20px 0;
   }
- /*Selayang Pandang */
 
-    /* Visi dan Misi */
-
+  /* ####################################### */
+  /* ---- selayang pandang / visi & misi --- */
+  /* ####################################### */
   .visi h1 {
     font-size: 25px;
   }
@@ -82,7 +107,9 @@
     font-size: 18px;    
   }
 
-    /* Lambang dan Arti */
+  /* ######################################## */
+  /* ---- selayang pandang / lambang dan arti */
+  /* ######################################## */
   
   .arti-lambang .arti-title {
     font-size: 20px;
@@ -92,7 +119,9 @@
     font-size: 14px;
   }
 
-    /* Sejarah */
+  /* ####################################### */
+  /* ---- selayang pandang / sejarah ------- */
+  /* ####################################### */
 
   .tentang-minahasa .tombol {
     margin-bottom: 20px;
@@ -101,14 +130,48 @@
   .quotes .moto {
     font-size: 30px;
   }
-  /*AkhirSelayangPandang*/
+
+  /* ####################################### */
+  /* -------------- berita ----------------- */
+  /* ####################################### */
+
+  .berita-title .page-title h1 {
+    font-size: 300%;
+  }
+
+  #berita .post-slide12 .post-review h3,
+  {
+    font-size: 130%;
+  }
+
+  /* ####################################### */
+  /* -------------- detailpost ------------- */
+  /* ####################################### */
+
+  .padding {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* ########################################## */
+  /* ---- socmed ------------------------------ */
+  /* ########################################## */
+
+  #socmed li a {
+    width: 50px;
+    height: 50px;
+    font-size: 100%;
+  }
+
 
 }
 
-
 /* sm */
 @media (min-width: 768px) and (max-width: 991px) {
-  /* Make Navigation Toggle on Desktop Hover */
+  
+  /* ####################################### */
+  /* -------------- navbar ----------------- */
+  /* ####################################### */
   .dropdown:hover .dropdown-menu {
       display: block;
       -webkit-animation: fadeInUp 400ms;
@@ -128,7 +191,6 @@
     margin-top: 0;
   }
 
-  /* header navbar */
   .navbar-header {
     padding: auto;
     margin: auto;
@@ -139,7 +201,9 @@
     margin: 10px 325px 0px 325px;
   }
 
-  /* service */
+  /* ####################################### */
+  /* -------------- service ---------------- */
+  /* ####################################### */
 
   #service {
     margin-bottom: -160px;
@@ -181,7 +245,9 @@
     padding: 0;
   }
   
-  /* featured-news */
+  /* ####################################### */
+  /* -------------- featured-news ---------- */
+  /* ####################################### */
   .post-slide .post-title{
     font-size: 100%;
   }
@@ -206,11 +272,9 @@
     margin-bottom: 20px;
   }
 
-
-
-  /*Selayang Pandang */
-
-    /*Visi dan Misi*/
+  /* ####################################### */
+  /* ---- selayang pandang / visi dan misi - */
+  /* ####################################### */
 
   .visi h1 {
     font-size: 25px;
@@ -221,7 +285,9 @@
     font-size: 18px;    
   }
 
-    /*Lambang dan Arti */
+  /* ######################################## */
+  /* ---- selayang pandang / lambang dan arti */
+  /* ######################################## */
 
   .arti-lambang img {
     width: 360px;
@@ -241,13 +307,17 @@
     font-size: 17px;
   }
 
-   /* Peta dan Topografi */
+  /* ########################################## */
+  /* ---- selayang pandang / peta dan topografi */
+  /* ########################################## */
 
   .info-peta h1 {
     font-size: 25px;
   }
 
-   /* Sejarah */
+  /* ####################################### */
+  /* ---- selayang pandang / sejarah ------- */
+  /* ####################################### */
 
   .tentang-minahasa .tombol {
     margin-bottom: 20px;
@@ -256,69 +326,123 @@
   .quotes .moto {
     font-size: 30px;
   }
-  /*AkhirSelayangPandang*/
+  
 
-  /*Page Suara Anda*/
+  /* ####################################### */
+  /* ---------- halaman suara anda --------- */
+  /* ####################################### */
+
     #page-suara-anda .page-title h1 {
     font-size: 40px;
   }
 
-  /* AkhirPageSuaraAnda */
 
-  /* Galeri */
+  /* ####################################### */
+  /* --------------- galeri ---------------- */
+  /* ####################################### */
+
   #galeri .page-title h1{
     font-size: 40px;
   }
 
-  /*AkhirGalery*/
+
+  /* ####################################### */
+  /* --------------- berita ---------------- */
+  /* ####################################### */
+
+  .berita-title .page-title h1 {
+    font-size: 250%;
+    }
+
+  #berita .post-slide12 .post-review h3,
+  #berita .post-slide12 .post-review span,
+  #berita .post-slide12 .post-review ul li {
+    font-size: 100%;
+  }
+
+  /* ####################################### */
+  /* --------------- detailpost ------------ */
+  /* ####################################### */
+
+  .padding {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* ########################################## */
+  /* ---- socmed ------------------------------ */
+  /* ########################################## */
+
+  #socmed li a {
+    width: 50px;
+    height: 50px;
+    font-size: 100%;
+  }
 
 }
 
 /* xs */
-@media (max-width: 767px) and (min-width: 481px){
+@media (min-width: 481px) and (max-width: 767px) {
+  body, html {
+    overflow: auto!important;
+    max-height: 100% !important;
+  }
+
+  /* ####################################### */
+  /* -------------- navbar ----------------- */
+  /* ####################################### */
 
   .navbar-nav>li{
-      display: block;
-      margin: 0;
-      padding-bottom: 0;
+    display: block;
+    margin: 0;
+    padding-bottom: 0;
+    margin-left: 5px;
   }
-  .navbar-inverse .navbar-nav>li>a{
-      display: block;
-  }
-  .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus{
-      background-color: transparent;
-  }
-    .navbar-inverse .navbar-brand{
-      margin-bottom: 10px;
-  }
+
   .nav-tabs > li.active > a:after{
     display: none;
   }
+
+  .navbar-brand > img {
+    max-width: 80%;
+    margin: 0 0 0px 20px;
+    padding: 0px;
+  }
+
+  .navbar-header > button {
+    margin: 10px ;
+  }
+
+
     
-  /*Selayang Pandang */
+  /* ####################################### */
+  /* ---- selayang pandang ----------------- */
+  /* ####################################### */
 
   .header-selayang h1 {
     font-size: 25px;
   }
 
-    /*Visi dan Misi*/
+  /* ####################################### */
+  /* ---- selayang pandang / visi dan misi - */
+  /* ####################################### */
 
   .visi h1 {
     font-size: 25px;
-    
   }
 
   .misi .misi-wrap p {
     font-size: 18px;    
   }
 
-    /*Lambang dan Arti */
+  /* ######################################## */
+  /* ---- selayang pandang / lambang dan arti */
+  /* ######################################## */
 
   .arti-lambang img {
     width: 180px;
     height: 240px;
     margin-bottom: 30px;
-
   }
 
   .arti-lambang {
@@ -333,13 +457,17 @@
     font-size: 14px;
   }
 
-    /* Peta dan Topografi */
+  /* ########################################## */
+  /* ---- selayang pandang / peta dan topografi */
+  /* ########################################## */
 
   .info-peta h1 {
     font-size: 25px;
   }
 
-   /* Sejarah */
+  /* ####################################### */
+  /* ---- selayang pandang / sejarah ------- */
+  /* ####################################### */
 
   .tentang-minahasa .tombol {
     margin-bottom: 20px;
@@ -349,23 +477,30 @@
     font-size: 30px;
   }
 
-  /* Page Suara Anda */
+  /* ####################################### */
+  /* -------- halaman suara anda ----------- */
+  /* ####################################### */
     
-    #page-suara-anda .page-title h1 {
+  #page-suara-anda .page-title h1 {
     font-size: 40px;
   }
 
+  /* ####################################### */
+  /* -------- galeri ----------------------- */
+  /* ####################################### */
 
-  /* Galeri */
   #galeri .page-title h1{
     font-size: 40px;
   }
 
-  /* service */
+  /* ####################################### */
+  /* -------- service ----------------------- */
+  /* ####################################### */
 
   #service {
     margin-bottom: -160px;
   }
+
   #service .container{
     padding-left: 0;
   }
@@ -378,13 +513,14 @@
     width: 100%;
     padding: 5px;
   }
+
   #service .service-wrap .icon {
-      width: 30px;
-      height: 30px;
-      text-align: center;
-      line-height: 30px;
-      font-size: 100%;
-      margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 100%;
+    margin-right: 5px;
   }
 
   #service .service-wrap .icon i{
@@ -392,11 +528,11 @@
   }
 
   #service .service-wrap .capt h2 {
-      font-size: 100%;
-      margin: 0;
-      padding: 0;
-      line-height: 30px;
-      text-align: left;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+    text-align: left;
   }
 
   #service .service-wrap .capt {
@@ -407,21 +543,76 @@
     padding: 20px 0 20px 0;
   }
 
+  /* ####################################### */
+  /* -------- berita ----------------------- */
+  /* ####################################### */
+
+   #berita {
+    padding-top: 20px;
+  }
+  
+  #berita .post-content {
+    padding-bottom: 0px;
+  }
+
+  #berita h3 {
+    font-size: 100%;
+  }
+
+  .berita-title .page-title h1 {
+    font-size: 200%;
+    }
+
+  #berita .page-title {
+    padding-bottom: 20px;
+  }
+
+  #berita .panel {
+    display: none;
+  }
+
+  #berita .post-review h3,
+  #berita .post-review p {
+    font-size: 100%;
+  }
+
+  /* ####################################### */
+  /* -------- detailpost-------------------- */
+  /* ####################################### */
+
+  .padding {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* ########################################## */
+  /* ---- socmed ------------------------------ */
+  /* ########################################## */
+
+  #socmed li a {
+    width: 50px;
+    height: 50px;
+    font-size: 100%;
+  }
+
 }
 
 /* XS Portrait */
-@media (max-width: 480px) and (min-width: 366px) {
+@media (min-width: 366px) and (max-width: 480px) {
   body, html {
-
     overflow: auto!important;
     max-height: 100% !important;
   }
   
-  /* header navbar */
+  /* ########################################## */
+  /* -------------- navbar -------------------- */
+  /* ########################################## */
+
   .navbar-header .navbar-brand {
     padding: 0;
     margin: 0;
   }
+  
   .navbar-brand > img {
     max-width: 80%;
     margin: 0 0 10px 20px;
@@ -432,7 +623,15 @@
     margin-top: 10px 0 10px 0;
   }
 
-  /* welcome & service */
+  .navbar-nav>li {
+    padding-bottom: 0px;
+    margin-left: 5px;
+  }
+
+  /* ########################################## */
+  /* --------------- service ------------------ */
+  /* ########################################## */
+
   #welcome {
     padding: 20px 0 0 20px;
     text-align: left;
@@ -463,8 +662,6 @@
     margin-right: 10px;
     
   }
-
-  /* service */
 
   #service {
     margin-bottom: -160px;
@@ -481,13 +678,14 @@
     width: 100%;
     padding: 5px;
   }
+
   #service .service-wrap .icon {
-      width: 30px;
-      height: 30px;
-      text-align: center;
-      line-height: 30px;
-      font-size: 100%;
-      margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 100%;
+    margin-right: 5px;
   }
 
   #service .service-wrap .icon i{
@@ -495,21 +693,21 @@
   }
 
   #service .service-wrap .capt h2 {
-      font-size: 100%;
-      margin: 0;
-      padding: 0;
-      line-height: 30px;
-      text-align: left;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+    text-align: left;
   }
 
   #service .service-wrap .capt {
     padding: 0;
-}
+  }
 
 
-  /* featured-news */
-
-
+  /* ########################################## */
+  /* --------- featured-news ------------------ */
+  /* ########################################## */
 
   .post-slide .hrslide img{
     width: 100%;
@@ -524,20 +722,26 @@
     display: none;
   }
 
-  /* si-terpadu */
+  /* ########################################## */
+  /* --------- si terpadu --------------------- */
+  /* ########################################## */
+
   #si-terpadu .box {
     width: 300px;
     margin: 10px auto 10px auto;
   }
 
-   /* si-terpadu */
+  /* ########################################## */
+  /* --------- suara anda --------------------- */
+  /* ########################################## */
+
    #suara-anda .box {
     width: 300px;
   }
     
-  /*Selayang Pandang */
-
-    /*Visi dan Misi*/
+  /* ########################################## */
+  /* ---- selayang pandang / visi dan misi ---- */
+  /* ########################################## */
 
   .visi h1 {
     font-size: 17px;
@@ -561,13 +765,17 @@
 
   }
 
-  /* Peta dan Topografi */
+  /* ########################################## */
+  /* ---- selayang pandang / peta dan topografi */
+  /* ########################################## */
 
   .info-peta h1 {
     font-size: 17px;
   }
 
-   /* Sejarah */
+  /* ########################################## */
+  /* ---- selayang pandang / sejarah ---------- */
+  /* ########################################## */
 
   .tentang-minahasa .tombol {
     margin-bottom: 20px;
@@ -576,43 +784,89 @@
   .quotes {
     display: none;
   }
-  /*AkhirSelayangPandang*/
 
-  /* Page Suara Anda */
+  /* ########################################## */
+  /* ---- halaman suara anda ------------------ */
+  /* ########################################## */
     
-    #page-suara-anda .page-title h1 {
-    font-size: 40px;
-    }
-
-  /* AkhirPageSuaraAnda */
-
-  /* Galeri */
-  #galeri .page-title h1{
+  #page-suara-anda .page-title h1 {
     font-size: 40px;
   }
 
-  /*AkhirGaleri*/
+  /* ########################################## */
+  /* ---- galeri ------------------------------ */
+  /* ########################################## */
+
+  #galeri .page-title h1{
+    font-size: 100%;
+  }
+
+  /* ########################################## */
+  /* ---- socmed ------------------------------ */
+  /* ########################################## */
 
   #socmed li a {
     width: 50px;
     height: 50px;
-    font-size: 10px
+    font-size: 100%;
   }
+
+  /* ########################################## */
+  /* ---- berita ------------------------------ */
+  /* ########################################## */
+
+  #berita {
+    padding-top: 20px;
+  }
+
+  .berita-title .page-title h1 {
+    font-size: 200%;
+    }
+
+  #berita .page-title {
+    padding-bottom: 20px;
+  }
+
+  #berita .panel {
+    display: none;
+  }
+
+  #berita .post-slide12 .post-review h3,
+  #berita .post-slide12 .post-review span,
+  #berita .post-slide12 .post-review ul li {
+    font-size: 100%;
+  }
+
+  /* ########################################## */
+  /* ---- detailpost -------------------------- */
+  /* ########################################## */
+
+  .padding {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+
 }
 
 
-@media (max-width: 365px) and (min-width: 321px){
+@media (min-width: 321px) and (max-width: 365px){
   body, html {
 
     overflow: auto!important;
     max-height: 100% !important;
   }
   
-  /* header navbar */
+  /* ########################################## */
+  /* ---- navbar ------------------------------ */
+  /* ########################################## */
+
   .navbar-header .navbar-brand {
     padding: 0;
     margin: 0;
   }
+
   .navbar-brand > img {
     max-width: 80%;
     margin: 0 0 10px 20px;
@@ -623,7 +877,15 @@
     margin-top: 10px 0 10px 0;
   }
 
-  /* welcome & service */
+  .navbar-nav>li {
+    padding-bottom: 0px;
+    margin-left: 5px;
+  }
+
+  /* ########################################## */
+  /* ------- service -------------------------- */
+  /* ########################################## */
+
   #welcome {
     padding: 20px 0 0 20px;
     text-align: left;
@@ -655,7 +917,256 @@
     
   }
 
-  /* service */
+  #service {
+    margin-bottom: -160px;
+  }
+
+  #service .container{
+    padding-left: 0;
+  }
+  
+  .service {
+    padding: 0 15px 0 15px;
+  }
+
+  #service .item {
+    width: 100%;
+    padding: 5px;
+  }
+
+  #service .service-wrap .icon {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 100%;
+    margin-right: 5px;
+  }
+
+  #service .service-wrap .icon i{
+    font-size: 100%;
+  }
+
+  #service .service-wrap .capt h2 {
+      font-size: 100%;
+      margin: 0;
+      padding: 0;
+      line-height: 30px;
+      text-align: left;
+  }
+
+  #service .service-wrap .capt {
+    padding: 0;
+  }
+
+  /* ########################################## */
+  /* ---- berita ------------------------------ */
+  /* ########################################## */
+  #berita {
+    padding-top: 20px;
+  }
+
+  .berita-title .page-title h1 {
+    font-size: 200%;
+    }
+
+  #berita .page-title {
+    padding-bottom: 20px;
+  }
+
+  #berita .panel {
+    display: none;
+  }
+
+  #berita .post-slide12 .post-review h3,
+  #berita .post-slide12 .post-review span,
+  #berita .post-slide12 .post-review ul li {
+    font-size: 100%;
+  }
+
+  /* ########################################## */
+  /* ---- featured news ----------------------- */
+  /* ########################################## */
+
+  .post-slide .hrslide img{
+    width: 100%;
+    height: auto;
+  }
+
+  .post-slide .hrslide {
+    height: auto;
+  }
+
+  #featured-news .bigtwo {
+    display: none;
+  }
+
+  /* ########################################## */
+  /* ---- si terpadu -------------------------- */
+  /* ########################################## */
+  
+  #si-terpadu .box {
+    width: 300px;
+    margin: 10px auto 10px auto;
+  }
+
+  /* ########################################## */
+  /* ---- suara anda -------------------------- */
+  /* ########################################## */
+   
+  #suara-anda .box {
+    width: 300px;
+  }
+
+  /* ########################################## */
+  /* ---- selayang pandang / visi dan misi ---- */
+  /* ########################################## */
+
+  .visi h1 {
+    font-size: 17px;
+    
+  }
+
+  .misi .misi-wrap {
+    padding-right: 0px;
+  }
+
+  .misi .misi-wrap .logo {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .misi .misi-wrap p {
+    font-size: 17px;
+    text-align: center;
+
+  }
+
+  /* ########################################## */
+  /* ---- selayang pandang / peta dan topografi */
+  /* ########################################## */
+
+  .info-peta h1 {
+    font-size: 17px;
+  }
+
+  /* ########################################## */
+  /* ---- selayang pandang / sejarah ---------- */
+  /* ########################################## */
+
+  .tentang-minahasa .tombol {
+    margin-bottom: 20px;
+  }
+
+  .quotes {
+    display: none;
+  }
+
+  /* ########################################## */
+  /* ---- halaman suara anda ------------------ */
+  /* ########################################## */
+    
+  #page-suara-anda .page-title h1 {
+    font-size: 40px;
+  }
+
+  /* ########################################## */
+  /* ---- galeri ------------------------------ */
+  /* ########################################## */
+  #galeri .page-title h1{
+    font-size: 40px;
+  }
+
+  /* ########################################## */
+  /* ---- detailpost -------------------------- */
+  /* ########################################## */
+  
+  aside .widget .fb .nobottommargin {
+    padding: 0 30px 0 20px;
+  }
+
+  /* ########################################## */
+  /* ---- socmed ------------------------------ */
+  /* ########################################## */
+
+  #socmed li a {
+    width: 50px;
+    height: 50px;
+    font-size: 100%;
+  }
+}
+
+
+@media (max-width: 320px) {
+  body, html {
+    overflow: auto!important;
+    max-height: 100% !important;
+  }
+  
+  /* ########################################## */
+  /* ---- navbar ------------------------------ */
+  /* ########################################## */
+
+  .navbar-header .navbar-brand {
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar-brand > img {
+    max-width: 80%;
+    margin: 0 0 10px 20px;
+    padding: 0px;
+  }
+
+  .navbar-header > button {
+    margin-top: 10px 0 10px 0;
+  }
+
+  .navbar-nav>li {
+    padding-bottom: 0px;
+    margin-left: 5px;
+  }
+
+  /* ########################################## */
+  /* ------- service -------------------------- */
+  /* ########################################## */
+
+  #welcome {
+    padding: 20px 0 0 20px;
+    text-align: left;
+  }
+
+  #welcome .animation.animated-item-1 {
+    font-size: 100%;
+  }
+
+  #welcome .animation.animated-item-2 {
+    font-size: 200%;
+    margin-top : 10px;
+  }
+
+  #welcome > h1 {
+    margin-right: 50px;
+  }
+
+  #welcome .animation.animated-item-3 {
+    padding: 3px;
+  }
+
+  #welcome .btn-slide {
+    padding: 0 30px;
+    line-height: 20px;
+    margin-top: 5px;
+    font-size: 80%;
+    margin-right: 10px;
+    
+  }
+
+  /* ########################################## */
+  /* ------ service --------------------------- */
+  /* ########################################## */
 
   #service {
     margin-bottom: -160px;
@@ -695,13 +1206,12 @@
 
   #service .service-wrap .capt {
     padding: 0;
-}
+  }
 
 
-  /* featured-news */
-
-
-
+  /* ########################################## */
+  /* ---- featured news ----------------------- */
+  /* ########################################## */
   .post-slide .hrslide img{
     width: 100%;
     height: auto;
@@ -715,20 +1225,26 @@
     display: none;
   }
 
-  /* si-terpadu */
+  /* ########################################## */
+  /* ---- si terpadu -------------------------- */
+  /* ########################################## */
+  
   #si-terpadu .box {
     width: 300px;
     margin: 10px auto 10px auto;
   }
 
-   /* si-terpadu */
-   #suara-anda .box {
+  /* ########################################## */
+  /* ---- suara anda -------------------------- */
+  /* ########################################## */
+   
+  #suara-anda .box {
     width: 300px;
   }
-    
-  /*Selayang Pandang */
 
-    /*Visi dan Misi*/
+  /* ########################################## */
+  /* ---- selayang pandang / visi dan misi ---- */
+  /* ########################################## */
 
   .visi h1 {
     font-size: 17px;
@@ -752,13 +1268,17 @@
 
   }
 
-  /* Peta dan Topografi */
+  /* ########################################## */
+  /* ---- selayang pandang / peta dan topografi */
+  /* ########################################## */
 
   .info-peta h1 {
     font-size: 17px;
   }
 
-   /* Sejarah */
+  /* ########################################## */
+  /* ---- selayang pandang / sejarah ---------- */
+  /* ########################################## */
 
   .tentang-minahasa .tombol {
     margin-bottom: 20px;
@@ -767,209 +1287,67 @@
   .quotes {
     display: none;
   }
-  /*AkhirSelayangPandang*/
 
-  /* Page Suara Anda */
+  /* ######################################### */
+  /* ---- halaman suara-anda -s---------------- */
+  /* ######################################### */
     
-    #page-suara-anda .page-title h1 {
+  #page-suara-anda .page-title h1 {
     font-size: 40px;
-    }
+  }
 
-  /* AkhirPageSuaraAnda */
 
-  /* Galeri */
+  /* ######################################### */
+  /* ---- galeri ------------------------- */
+  /* ######################################### */
+
   #galeri .page-title h1{
     font-size: 40px;
   }
 
-  /*AkhirGaleri*/
+  /* ######################################### */
+  /* ---- berita ----------------------------- */
+  /* ######################################### */
 
-}
-
-
-/* */
-@media (max-width: 320px) and (min-width: 120px){
-  body, html {
-
-    overflow: auto!important;
-    max-height: 100% !important;
-  }
-  
-  /* header navbar */
-  .navbar-header .navbar-brand {
-    padding: 0;
-    margin: 0;
-  }
-  .navbar-brand > img {
-    max-width: 80%;
-    margin: 0 0 10px 20px;
-    padding: 0px;
+  #berita {
+    padding-top: 20px;
   }
 
-  .navbar-header > button {
-    margin-top: 10px 0 10px 0;
-  }
-
-  /* welcome & service */
-  #welcome {
-    padding: 20px 0 0 20px;
-    text-align: left;
-  }
-
-  #welcome .animation.animated-item-1 {
-    font-size: 100%;
-  }
-
-  #welcome .animation.animated-item-2 {
+  .berita-title .page-title h1 {
     font-size: 200%;
-    margin-top : 10px;
+    }
+
+  #berita .page-title {
+    padding-bottom: 20px;
   }
 
-  #welcome > h1 {
-    margin-right: 50px;
+  #berita .panel {
+    display: none;
   }
 
-  #welcome .animation.animated-item-3 {
-    padding: 3px;
-  }
-
-  #welcome .btn-slide {
-    padding: 0 30px;
-    line-height: 20px;
-    margin-top: 5px;
-    font-size: 80%;
-    margin-right: 10px;
-    
-  }
-
-  /* service */
-
-  #service {
-    margin-bottom: -160px;
-  }
-  #service .container{
-    padding-left: 0;
-  }
-  
-  .service {
-    padding: 0 15px 0 15px;
-  }
-
-  #service .item {
-    width: 100%;
-    padding: 5px;
-  }
-  #service .service-wrap .icon {
-      width: 30px;
-      height: 30px;
-      text-align: center;
-      line-height: 30px;
-      font-size: 100%;
-      margin-right: 5px;
-  }
-
-  #service .service-wrap .icon i{
+  #berita .post-slide12 .post-review h3,
+  #berita .post-slide12 .post-review span,
+  #berita .post-slide12 .post-review ul li {
     font-size: 100%;
   }
 
-  #service .service-wrap .capt h2 {
-      font-size: 100%;
-      margin: 0;
-      padding: 0;
-      line-height: 30px;
-      text-align: left;
+  /* ######################################### */
+  /* ---- detailpost ------------------------- */
+  /* ######################################### */
+  
+  aside .widget .fb .nobottommargin {
+    padding: 0 20px;
   }
 
-  #service .service-wrap .capt {
-    padding: 0;
-}
+  /* ########################################## */
+  /* ---- socmed ------------------------------ */
+  /* ########################################## */
 
-
-  /* featured-news */
-
-
-
-  .post-slide .hrslide img{
-    width: 100%;
-    height: auto;
+  #socmed li a {
+    width: 50px;
+    height: 50px;
+    font-size: 100%;
   }
-
-  .post-slide .hrslide {
-    height: auto;
-  }
-
-  #featured-news .bigtwo {
-    display: none;
-  }
-
-  /* si-terpadu */
-  #si-terpadu .box {
-    width: 300px;
-    margin: 10px auto 10px auto;
-  }
-
-   /* si-terpadu */
-   #suara-anda .box {
-    width: 300px;
-  }
-    
-  /*Selayang Pandang */
-
-    /*Visi dan Misi*/
-
-  .visi h1 {
-    font-size: 17px;
-    
-  }
-
-  .misi .misi-wrap {
-    padding-right: 0px;
-  }
-
-  .misi .misi-wrap .logo {
-    float: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .misi .misi-wrap p {
-    font-size: 17px;
-    text-align: center;
-
-  }
-
-  /* Peta dan Topografi */
-
-  .info-peta h1 {
-    font-size: 17px;
-  }
-
-   /* Sejarah */
-
-  .tentang-minahasa .tombol {
-    margin-bottom: 20px;
-  }
-
-  .quotes {
-    display: none;
-  }
-  /*AkhirSelayangPandang*/
-
-  /* Page Suara Anda */
-    
-    #page-suara-anda .page-title h1 {
-    font-size: 40px;
-    }
-
-  /* AkhirPageSuaraAnda */
-
-  /* Galeri */
-  #galeri .page-title h1{
-    font-size: 40px;
-  }
-
-  /*AkhirGaleri*/
 
 }
 
