@@ -1,6 +1,17 @@
 jQuery(function ($) {
     'use strict';
-
+    //navbar
+    $(function() {
+        $('.navbar-nav li > a:not(:only-child)').click(function(e) {
+            $(this).siblings('.dropdown-menu').toggle();
+            $('.dropdown-menu').not($(this).siblings()).hide();
+            e.stopPropagation();
+        });
+        $('html').click(function() {
+            $('.dropdown-menu').hide();
+        });
+    });
+    
     //#main-slider
     $(function () {
         $('#main-slider.carousel').carousel({
@@ -140,6 +151,9 @@ jQuery(function ($) {
             0: {
                 items: 1
             },
+            481: {
+                items: 2
+            },
             768: {
                 items: 2
             },
@@ -159,8 +173,21 @@ jQuery(function ($) {
         autoplayTimeout:4000,
         autoplayHoverPause:true
     })
+
+    $('.agenda').owlCarousel({
+        loop:true,
+        margin:10,
+        dots: true,
+        autoHeight: true,
+        items:1,
+        autoplay:true,
+        autoplayTimeout:4000,
+        autoplayHoverPause:true
+    })
 });
 
  $(function(){	
    new WOW().init(); 	
  });
+
+ 
