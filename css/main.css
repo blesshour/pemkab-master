@@ -9,7 +9,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #4e4e4e;
     line-height: 22px;
-    padding-top: 116px;
+    padding-top: 115px;
 }
 
 h1,
@@ -532,7 +532,7 @@ body>section {
 	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
 	border-radius: 12px;
     background-color: white;
-    z-index: 99999;
+    z-index: 999;
     margin-top: -100px;
     position: relative;
 }
@@ -553,7 +553,6 @@ body>section {
     border-radius: 50%;
     -webkit-transition: .4s;
     transition: .4s;
-    float: left;
 }
 
 #service .service-wrap:hover .icon {
