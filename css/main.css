@@ -1813,6 +1813,7 @@ ul.faq li > div h3 {
   color: #da512d;
   padding: 5px 0;
   text-align: center;
+  padding-right: 5px;
 }
 
 .blog .blog-item .entry-meta > span {
@@ -2213,6 +2214,9 @@ ul.sidebar-gallery {
     padding-bottom: 1em;
 }
 
+.padding-main {
+    padding-right: 5px;
+}
 
 /* ----------------------------------------------------------------
     Social Icons
