@@ -1,6 +1,9 @@
 <?=$this->layout('index');?>
 
 <section id="berita">
+
+<script async src="//platform-api.sharethis.com/js/sharethis.js#property=5c2351a42abd7d00112b9ebd&product="sticky-share-buttons"></script>
+
     <div class="container">
         <div class="row">
             <div class="col-md-9">
@@ -105,6 +108,7 @@
             
             <aside class="col-md-3">
                 <!-- Insert Sidebar -->
+                <?=$this->insert('sidebar-recent-post');?>
                 <?=$this->insert('sidebar');?>
 			</aside> 
         </div>
