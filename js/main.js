@@ -1,17 +1,6 @@
 jQuery(function ($) {
     'use strict';
-    //navbar
-    $(function() {
-        $('.navbar-nav li > a:not(:only-child)').click(function(e) {
-            $(this).siblings('.dropdown-menu').toggle();
-            $('.dropdown-menu').not($(this).siblings()).hide();
-            e.stopPropagation();
-        });
-        $('html').click(function() {
-            $('.dropdown-menu').hide();
-        });
-    });
-    
+
     //#main-slider
     $(function () {
         $('#main-slider.carousel').carousel({
@@ -125,7 +114,7 @@ jQuery(function ($) {
         autoplay:true,
         autoplayTimeout:4000,
         autoplayHoverPause:true,
-        items:1,
+        items:1
     });
 
     //featured-news
@@ -151,9 +140,6 @@ jQuery(function ($) {
             0: {
                 items: 1
             },
-            481: {
-                items: 2
-            },
             768: {
                 items: 2
             },
@@ -173,21 +159,26 @@ jQuery(function ($) {
         autoplayTimeout:4000,
         autoplayHoverPause:true
     })
-
-    $('.agenda').owlCarousel({
-        loop:true,
-        margin:10,
-        dots: true,
-        autoHeight: true,
-        items:1,
-        autoplay:true,
-        autoplayTimeout:4000,
-        autoplayHoverPause:true
-    })
 });
 
  $(function(){	
    new WOW().init(); 	
  });
 
- 
+
+// id tombol share facebook
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '2000966146868898',
+      xfbml      : true,
+      version    : 'v2.7'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
