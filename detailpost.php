@@ -1,39 +1,42 @@
-<?=$this->layout('index');?>
+<?=$this->layout('index');
+$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+?>
+
+
 
 <section id="berita">
-
-<script async src="//platform-api.sharethis.com/js/sharethis.js#property=5c2351a42abd7d00112b9ebd&product="sticky-share-buttons"></script>
-
     <div class="container">
         <div class="row">
             <div class="col-md-9">
-                <h2><?=$post['title'];?></h2>
-                <div class="entry-meta">
-                    <span id="publish_date" class="fa fa-calendar padding-main">&nbsp;<?=$this->pocore()->call->podatetime->tgl_indo($post['date']);?></span>
+                    <h2><?=$post['title'];?></h2>
+                    <div class="entry-meta">
+                        <span id="publish_date" class="fa fa-calendar padding-main">&nbsp;<?=$this->pocore()->call->podatetime->tgl_indo($post['date']);?></span>
+                        
+                        <span><a href="#comments" class="fa fa-comment padding-main">&nbsp;<?=$this->post()->getCountComment($post['id_post']);?> <?=$this->e($front_comment);?></a></span>
+
+                        <a href="#" id="shareBtn" ><i class="fa fa-share-alt"></i> Share </a>
+
                     
-                    <span><a href="#comments" class="fa fa-comment padding-main">&nbsp;<?=$this->post()->getCountComment($post['id_post']);?> <?=$this->e($front_comment);?></a></span>
+                    </div>
 
-                    <a href="#"><i class="fa fa-share-alt"></i> Share </a>
-                </div>
+                    <div class="blog-item">
+                        <img class="img-responsive img-blog gambar" src="<?=BASE_URL;?>/<?=DIR_CON;?>/uploads/<?=$post['picture'];?>" width="100%" alt="" />
+                        <?php if ($post['picture_description'] != '') { ?>
+                        <p class="text-center" style="padding:10px; background:#eee;"><i><?=$post['picture_description'];?></i></p>
+                        <?php } ?>
+                        <div class="row">  
 
-                <div class="blog-item">
-                    <img class="img-responsive img-blog gambar" src="<?=BASE_URL;?>/<?=DIR_CON;?>/uploads/<?=$post['picture'];?>" width="100%" alt="" />
-                    <?php if ($post['picture_description'] != '') { ?>
-                    <p class="text-center" style="padding:10px; background:#eee;"><i><?=$post['picture_description'];?></i></p>
-                    <?php } ?>
-                    <div class="row">  
-
-                        <div class="col-xs-12 col-sm-10 blog-content">
-                            <?=htmlspecialchars_decode(html_entity_decode($post['content']));?>
-                            <div class="post-tags">
-                                <strong><?=$this->e($front_tag);?> :</strong> <?=$this->post()->getPostTag($post['tag'], ' / ');?>
+                            <div class="col-xs-12 col-sm-10 blog-content">
+                                <?=htmlspecialchars_decode(html_entity_decode($post['content']));?>
+                                <div class="post-tags">
+                                    <strong><?=$this->e($front_tag);?> :</strong> <?=$this->post()->getPostTag($post['tag'], ' / ');?>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div><!--/.blog-item-->
+                    </div><!--/.blog-item-->
 
 
-                <?php if ($post['comment'] == 'Y') { ?>
+                    <?php if ($post['comment'] == 'Y') { ?>
                     <?php if ($this->post()->getCountComment($post['id_post']) > 0) { ?>
                         <h1 id="comments_title"><?=$this->post()->getCountComment($post['id_post']);?> <?=$this->e($front_comment);?></h1>
                         <?php
@@ -107,9 +110,46 @@
             <aside class="col-md-3">
                 <!-- Insert Sidebar -->
                 <?=$this->insert('sidebar-recent-post');?>
-                <?=$this->insert('sidebar');?>
-			</aside> 
+		<?=$this->insert('sidebar');?>
+	   </aside> 
         </div>
         <!-- ./end of row -->
     </div>
+   
 </section>
+
+<script>
+document.getElementById('shareBtn').onclick = function() {
+  FB.ui({
+    method: 'share',
+    display: 'popup',
+    href: '<?php echo $actual_link;?>',
+  }, function(response){});
+}
+;(function($){
+  $.fn.customerPopup = function (e, intWidth, intHeight, blnResize) {
+    
+    // Prevent default anchor event
+    e.preventDefault();
+    
+    // Set values for window
+    intWidth = intWidth || '500';
+    intHeight = intHeight || '400';
+    strResize = (blnResize ? 'yes' : 'no');
+
+    // Set title and open popup with focus on it
+    var strTitle = ((typeof this.attr('title') !== 'undefined') ? this.attr('title') : 'Social Share'),
+        strParam = 'width=' + intWidth + ',height=' + intHeight + ',resizable=' + strResize,            
+        objWindow = window.open(this.attr('href'), strTitle, strParam).focus();
+  }
+  
+  /* ================================================== */
+  
+  $(document).ready(function ($) {
+    $('.customer.share').on("click", function(e) {
+      $(this).customerPopup(e);
+    });
+  });
+    
+}(jQuery));
+</script>
