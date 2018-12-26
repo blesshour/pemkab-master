@@ -1,5 +1,5 @@
 <!-- Begin fluid width widget -->
-<div class="panel panel-info">
+<div class="panel panel-danger">
     <div class="panel-heading">
         <h3 class="panel-title">
             <span class="glyphicon glyphicon-list-alt"></span> Berita Terkiini
