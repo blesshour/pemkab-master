@@ -9,6 +9,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #4e4e4e;
     line-height: 22px;
+    padding-top: 116px;
 }
 
 h1,
@@ -2154,9 +2155,11 @@ ul.sidebar-gallery {
     Widgets
 -----------------------------------------------------------------*/
 
+#recent-post {
+    margin-top: 90px;
+}
 
 .widget {
-    position: relative;
     margin-top: 50px;
 }
 
