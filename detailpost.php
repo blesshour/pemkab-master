@@ -109,8 +109,9 @@ $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
             
             <aside class="col-md-3">
                 <!-- Insert Sidebar -->
-                <?=$this->insert('sidebar');?>
-			</aside> 
+                <?=$this->insert('sidebar-recent-post');?>
+		<?=$this->insert('sidebar');?>
+	   </aside> 
         </div>
         <!-- ./end of row -->
     </div>
