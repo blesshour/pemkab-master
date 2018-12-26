@@ -1,28 +1,24 @@
-
 <!-- Fluid width widget -->        
 <div class="panel panel-danger">
     <div class="panel-heading">
         <h3 class="panel-title text-center">
-            Info!
+            PENGUMUMAN
         </h3>
     </div>
     <div class="sidebar-ann owl-carousel owl-theme">
+     <?php
+         $anns = $this->pocore()->call->podb->from('pengumuman')
+             ->orderBy('id_pengumuman')
+             ->fetchAll();
+         foreach($anns as $ann){
+     ?>
         <div class="single-slide">
             <div class="fadeInRight">
-                <p>dari <strong>Gloria Borger</strong>
-                <small class="text-muted">kategori: Kritikan || Senin, 10 Oktober 2018 </small></p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quos atque eveniet. Vitae distinctio, numquam laboriosam nisi ullam ipsam. Magni, dolorem adipisci illum nostrum incidunt voluptatibus rem accusantium distinctio sit!</p>
+                <small class="text-muted"><?=$ann['date'];?></small></p>
+                <p><?=$ann['pengumuman'];?></p>
             </div>
         </div>
-
-        <div class="single-slide">
-            <div class="fadeInRight">
-                <p>dari <strong>Gloria Geger</strong>
-                <small class="text-muted">kategori: Kritikan || Senin, 10 Oktober 2018 </small></p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quos atque eveniet. Vitae distinctio, numquam laboriosam nisi ullam ipsam. Magni, dolorem adipisci illum nostrum incidunt voluptatibus rem accusantium distinctio sit!</p>
-            </div>
-        </div>
+     <?php } ?>
     </div>
 </div>
-<!-- End fluid width widget --> 
-
+<!-- End fluid width widget -->
