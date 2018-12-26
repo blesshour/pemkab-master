@@ -885,6 +885,12 @@ body>section {
 #bottom .widget {
     border-top: 2px solid #fff500;
 }
+
+#bottom .widget2 .nav .navbar-nav .dropdown {
+    background-color: red;
+}
+
+
 #bottom h3 {
     margin-top: 0;
     margin-bottom: 15px;
@@ -904,15 +910,22 @@ body>section {
     display: block;
     padding: 4px 0;
     color: #fff;
+    margin-left: 0;
 }
 
 #bottom ul li a {
     color: #fff;
     font-weight: 300;
+    padding: 0;
+    margin-right: 100px;
 }
 
 #bottom ul li a:hover {
     color: #da251d;
+}
+
+#bottom ul li ul li {
+    background-color: black;
 }
 
 #bottom .widget {
@@ -1813,7 +1826,6 @@ ul.faq li > div h3 {
   color: #da512d;
   padding: 5px 0;
   text-align: center;
-  padding-right: 5px;
 }
 
 .blog .blog-item .entry-meta > span {
@@ -2214,9 +2226,6 @@ ul.sidebar-gallery {
     padding-bottom: 1em;
 }
 
-.padding-main {
-    padding-right: 5px;
-}
 
 /* ----------------------------------------------------------------
     Social Icons
