@@ -6,15 +6,13 @@
                     <ul>
                         <li>
                             <address>
-                                <strong>Alamat:</strong><br>
-                                Jalan Sam Ratulangi,<br>
-                                Tondano Barat 95616
+                                <?=htmlspecialchars_decode($this->pocore()->call->posetting[8]['value']);?>
                             </address>
                         </li>
                         <li>
-                            <strong>Phone:</strong> 0431 - 321411 <br>
-                            <strong>Fax:</strong> 0431 - 323256 <br>
-                            <strong>Email:</strong> admin@minahasa.go.id
+                           <abbr title="Phone Number"><strong>Phone:</strong></abbr> <?=$this->pocore()->call->posetting[6]['value'];?><br>
+                            <abbr title="Fax"><strong>Fax:</strong></abbr> <?=$this->pocore()->call->posetting[7]['value'];?><br>
+                            <abbr title="Email Address"><strong>Email:</strong></abbr> <?=$this->pocore()->call->posetting[5]['value'];?>
                         </li>
                     </ul>
                     <br>
@@ -26,14 +24,11 @@
             <div class="col-md-3 col-sm-6">
                 <div class="widget">
                     <h3>Link Pintas</h3>
-                    <ul>
-                        <li><a href="kecamatan-dan-kelurahan.html">Kecamatan & Kelurahan</a></li>
-                        <li><a href="visi-dan-misi.html">Visi & Misi</a></li>
-                        <li><a href="berita.html">Berita</a></li>
-                        <li><a href="layanan-publik.html">Layanan Publik</a></li>
-                        <li><a href="galeri.html">Galeri</a></li>
-                        <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
-                    </ul>
+                    
+                        <?php
+                         echo $this->menu()->getFrontMenu(WEB_LANG, 'class="nav navbar-nav"', 'class="dropdown"', 'class="dropdown-menu"');
+                         ?>
+                    
                     <br>
                 </div>
             </div>
@@ -44,20 +39,18 @@
                 <div class="widget">
                     <h3>Berita Populer</h3>
                     <ul>
-                        <li><a>
-                            Judul Berita Satu <br>
-                            <small class = "text-muted">10/10/2018 - oleh Penulis</small>
+
+                    <?php
+                        $populars_side = $this->post()->getPopular('3', 'DESC', WEB_LANG_ID);
+                        foreach($populars_side as $popular_side){
+                    ?>
+                        <li><a href="<?=BASE_URL;?>/detailpost/<?=$popular_side['seotitle'];?>">
+                            <?=$popular_side['title'];?> <br>
+                            <small class = "text-muted"><?=$this->pocore()->call->podatetime->tgl_indo($popular_side['date']);?> - oleh <?=$this->post()->getAuthorName($popular_side['editor']);?></small>
                         </a></li>
                         <hr>
-                        <li><a>
-                            Judul Berita Satu <br>
-                            <small class = "text-muted">10/10/2018 - oleh Penulis</small>
-                        </a></li>
-                        <hr>
-                        <li><a>
-                            Judul Berita Satu <br>
-                            <small class = "text-muted">10/10/2018 - oleh Penulis</small>
-                        </a></li>
+                    <?php } ?>
+
                     </ul>
                     <br>
                 </div>
@@ -66,7 +59,7 @@
             
 
             <div class="col-md-3 col-sm-6">
-                <div class="widget">
+                <div class="widget" id="nomor-telepon-penting">
                     <h3>Nomor Telepon Penting</h3>
                     <ul>
                         <li><strong>Pemadam Kebakaran:</strong> <br> 0812 3456 7890</li>
@@ -89,7 +82,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                &copy; 2018 Pemerintah Kabupaten Minahasa
+                &copy; Gratification Monkeys 2018
             </div>
             <div class="col-sm-6">
                 <ul class="pull-right">
