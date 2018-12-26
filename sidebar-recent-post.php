@@ -2,49 +2,34 @@
 <div class="panel panel-info">
     <div class="panel-heading">
         <h3 class="panel-title">
-            <span class="glyphicon glyphicon-list-alt"></span> Recent Posts
+            <span class="glyphicon glyphicon-list-alt"></span> Berita Terkiini
         </h3>
     </div>
     <div class="panel-body">
         <ul class="media-list">
             <li class="media">
                 <div class="media-body">
+                    <?php
+                        $recents_side = $this->post()->getRecent('3', 'DESC', WEB_LANG_ID);
+                        foreach($recents_side as $recent_side){
+                    ?>
+
                     <h4 class="media-heading">
                                     <a href="#" class="text-info">
-                                        Ultricies Luctus
+                                        <?=$recent_side['title'];?>
                                     </a>
                                 </h4>
                     <p class="margin-top-10 margin-bottom-20">
-                        Ut sit amet tincidunt risus. Aenean quis tempus tortor. Pellentesque commodo malesuada augue...
+                        <?=$this->post()->getAuthorName($recent_side['editor']);?>
                     </p>
-                </div>
-            </li>
-            <li class="media">
-                <div class="media-body">
-                    <h4 class="media-heading">
-                        <a href="#" class="text-info">
-                            Nulla Vitae
-                        </a>
-                    </h4>
                     <p class="margin-top-10 margin-bottom-20">
-                        Pellentesque id nulla vitae nisl mollis hendrerit a non nisi. Cras ac velit elit. Fusce nulla odio, iaculis...
+                        <?=$this->pocore()->call->podatetime->tgl_indo($recent_side['date']);?>
                     </p>
-                </div>
-            </li>
-            <li class="media">
-                <div class="media-body">
-                    <h4 class="media-heading">
-                        <a href="#" class="text-info">
-                            Media Heading
-                        </a>
-                    </h4>
-                    <p class="margin-top-10 margin-bottom-20">
-                        Donec venenatis, orci sit amet tempor dapibus, nisi elit imperdiet ex, nec lobortis ex magna eu felis...
-                    </p>
+                    <?php } ?>
                 </div>
             </li>
         </ul>
-        <a href="#" class="btn btn-default btn-block">More Blog Posts »</a>
+        <a href="<?=BASE_URL.'/berita';?>" class="btn btn-default btn-block">Lihat lebih banyak »</a>
     </div>
 </div>
 <!-- End fluid width widget -->
