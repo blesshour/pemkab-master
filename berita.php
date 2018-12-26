@@ -21,15 +21,9 @@
                             </div>
                             <div class="post-content">
                                 <h3 class="post-title"><a href="<?=BASE_URL;?>/detailpost/<?=$slider_post['seotitle'];?>"><?=$slider_post['title'];?></a></h3>
-                                <ul class="post-bar list-inline">
-                                    <li><i class="fa fa-calendar"></i> June 5, 2016</li>
-                                    <li>
-                                        <i class="fa fa-folder"></i>
-                                        <a href="#">Mockup</a>
-                                        <a href="#">Graphics</a>
-                                        <a href="#">Flayers</a>
-                                    </li>
-                                </ul> 
+                                <span id="publish_date" class="fa fa-calendar padding-main">&nbsp;<?=$this->pocore()->call->podatetime->tgl_indo($slider_post['date']);?></span>
+                                <span><a href="#comments" class="fa fa-comment padding-main">&nbsp;<?=$this->post()->getCountComment($slider_post['id_post']);?> <?=$this->e($front_comment);?></a></span>
+                                <a href="#"><i class="fa fa-share-alt"></i> Share </a>
                             </div>
                         </div>
                     <?php } ?>
@@ -48,15 +42,9 @@
                                 </div>
                                 <div class="col-sm-8 col-xs-12 post-review">
                                     <h3 class="post-title"><a href="<?=BASE_URL;?>/detailpost/<?=$slider_post['seotitle'];?>"><?=$slider_post['title'];?></a></h3>
-                                    <span class="post-date"><i class="fa fa-calendar"></i> Nov 10,2015</span>
-                                    <ul class="post-bar list-inline">
-                                        <li>
-                                            <i class="fa fa-folder"></i>
-                                            <a href="#">Mockup</a>
-                                            <a href="#">Graphics</a>
-                                            <a href="#">Flayers</a>
-                                        </li>
-                                    </ul> 
+                                    <span id="publish_date" class="fa fa-calendar padding-main">&nbsp;<?=$this->pocore()->call->podatetime->tgl_indo($slider_post['date']);?></span>
+                                    <span><a href="#comments" class="fa fa-comment padding-main">&nbsp;<?=$this->post()->getCountComment($slider_post['id_post']);?> <?=$this->e($front_comment);?></a></span>
+                                    <a href="#"><i class="fa fa-share-alt"></i> Share </a> 
                                 </div>
                             </div>
                         </div>
@@ -72,7 +60,6 @@
                 <!-- Insert Sidebar -->
                 <?=$this->insert('sidebar-ann');?>
                 <?=$this->insert('sidebar');?>
-
             </aside> 
 
             <div class="col-sm-12 text-center">
