@@ -6,9 +6,11 @@
             <div class="col-md-9">
                     <h2><?=$post['title'];?></h2>
                     <div class="entry-meta">
-                        <i class="fa fa-calendar">&nbsp;</i><span id="publish_date" class="padding"><?=$this->pocore()->call->podatetime->tgl_indo($post['date']);?></span>
-                        <span class="padding"><i class="fa fa-user"></i> <a href="javascript:void(0)"> <?=$this->post()->getAuthorName($post['editor']);?></a></span>
-                        <span><i class="fa fa-comment"></i> <a href="#comments"><?=$this->post()->getCountComment($post['id_post']);?> <?=$this->e($front_comment);?></a></span>
+                        <span id="publish_date" class="fa fa-calendar padding-main">&nbsp;<?=$this->pocore()->call->podatetime->tgl_indo($post['date']);?></span>
+                        
+                        <span><a href="#comments" class="fa fa-comment padding-main">&nbsp;<?=$this->post()->getCountComment($post['id_post']);?> <?=$this->e($front_comment);?></a></span>
+
+                        <a href="#"><i class="fa fa-share-alt"></i> Share </a>
                     </div>
 
                     <div class="blog-item">
