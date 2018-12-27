@@ -1,8 +1,15 @@
 
 <section class="" id="featured-news">
     <div class="row running-text padding">
-        <div class="marquee">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptatum tempore vitae. Sed, aliquam alias. Sint dignissimos accusantium maiores numquam?</p>
+        <div class="runinfo owl-carousel">
+        <?php
+			$runinfos = $this->pocore()->call->podb->from('runninginfo')
+				->orderBy('id_runinfo')
+				->fetchAll();
+				foreach($runinfos as $runinfo){
+		?>
+            <div class="item text-center"><p><span class="label label-warning">NEWS!</span> <?=$runinfo['info'];?></p></div>
+        <?php } ?>
         </div>
     </div>
     
