@@ -1113,15 +1113,15 @@ $router->match('GET|POST', '/profil-wakil-bupati', function() use ($core, $templ
 	echo $templates->render('profil-wakil-bupati', compact('lang'));
 });
 
-$router->match('GET|POST', '/galeri', function() use ($core, $templates) {
+$router->match('GET|POST', '/galpemkabmin', function() use ($core, $templates) {
 	$lang = $core->setlang('home', WEB_LANG);
 	$info = array(
 		'page_title' => 'Galeri',
 		'page_desc' => $core->posetting[2]['value'],
 		'page_key' => $core->posetting[3]['value'],
-		'social_mod' => 'galeri',
+		'social_mod' => 'galpemkabmin',
 		'social_name' => $core->posetting[0]['value'],
-		'social_url' => $core->posetting[1]['value'].'/galeri',
+		'social_url' => $core->posetting[1]['value'].'/galpemkabmin',
 		'social_title' => $core->posetting[0]['value'],
 		'social_desc' => $core->posetting[2]['value'],
 		'social_img' => $core->posetting[1]['value'].'/'.DIR_INC.'/images/favicon.png',
@@ -1131,5 +1131,5 @@ $router->match('GET|POST', '/galeri', function() use ($core, $templates) {
 	$templates->addData(
 		$adddata
 	);
-	echo $templates->render('galeri', compact('lang'));
+	echo $templates->render('galpemkabmin', compact('lang'));
 });
