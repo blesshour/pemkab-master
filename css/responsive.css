@@ -14,11 +14,22 @@
     -webkit-animation: fadeInUp 400ms;
     animation: fadeIn Up 400ms;
   }
+
+  /* ####################################### */
+  /* -------------- navbar ----------------- */
+  /* ####################################### */
+
+  #service {
+    padding-bottom: 0px;
+  }
   
   /* ####################################### */
   /* ----------- featured-news ------------- */
   /* ####################################### */
 
+  #featured-news {
+    margin-top: -100px;
+  }
   #featured-news aside{
     padding: 0px 0 20px 0;
   }
