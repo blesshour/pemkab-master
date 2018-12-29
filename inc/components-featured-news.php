@@ -69,23 +69,19 @@
                                     </div>
                                 </div>
                             <?php } ?>
-
                         </div>
-                    </div>            
+                    </div>
+                    <div class="col-sm-12 text-center">
+                        <a href="<?=BASE_URL.'/berita';?>" class="btn btn-primary">Lihat lebih banyak</a>
+                    </div>          
                 </div>
             </div>
             <aside class="col-sm-3 wow fadeInRight">
                 <?=$this->insert('sidebar-ann');?>
                 <?=$this->insert('sidebar-agenda');?>
             </aside>
-
-
-
         </div>
         <!-- /.endrow -->
-        <div class="text-center">
-            <a href="<?=BASE_URL.'/berita';?>" class="btn btn-primary">Lihat lebih banyak</a>
-        </div>
     </div>
     <!--/.container-->
 </section>
