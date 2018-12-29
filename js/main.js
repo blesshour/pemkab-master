@@ -11,11 +11,22 @@ jQuery(function ($) {
             $('.dropdown-menu').hide();
         });
     });
+
+    //running-info
+    $('.runinfo').owlCarousel({
+        loop:true,
+        margin:10,
+        items:1,
+        autoplay:true,
+        autoplayTimeout:4000,
+        autoHeight:true,
+        autoplayHoverPause:true
+    })
     
     //#main-slider
     $(function () {
-        $('#main-slider.carousel').carousel({
-            interval: 8000
+        $('#headslider.carousel').carousel({
+            interval: 3000
         });
     });
 
@@ -99,6 +110,7 @@ jQuery(function ($) {
         loop:true,
         margin:1,
         items: 1,
+        autoHeight:true,
         autoplay:true,
         autoplayTimeout:4000,
         autoplayHoverPause:true
@@ -189,22 +201,5 @@ jQuery(function ($) {
  $(function(){	
    new WOW().init(); 	
  });
-
-// id tombol share facebook
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '2000966146868898',
-      xfbml      : true,
-      version    : 'v2.7'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
 
  
