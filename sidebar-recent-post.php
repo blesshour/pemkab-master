@@ -13,18 +13,9 @@
                         $recents_side = $this->post()->getRecent('3', 'DESC', WEB_LANG_ID);
                         foreach($recents_side as $recent_side){
                     ?>
-
-                    <h4 class="media-heading">
-                                    <a href="#" class="text-info">
-                                        <?=$recent_side['title'];?>
-                                    </a>
-                                </h4>
-                    <p class="margin-top-10 margin-bottom-20">
-                        <?=$this->post()->getAuthorName($recent_side['editor']);?>
-                    </p>
-                    <p class="margin-top-10 margin-bottom-20">
-                        <?=$this->pocore()->call->podatetime->tgl_indo($recent_side['date']);?>
-                    </p>
+                    <h4 class="media-heading"><a href="#" class="text-info"><?=$recent_side['title'];?></a></h4>
+                    <p class="margin-top-10 margin-bottom-20"><?=$this->pocore()->call->podatetime->tgl_indo($recent_side['date']);?></p>
+                    <br>
                     <?php } ?>
                 </div>
             </li>
