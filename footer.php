@@ -72,7 +72,7 @@
                 </div>
             </div>
             <!--/.col-md-3-->
-                        </div>              
+        </div>              
 
     </div>
 </section>
@@ -82,10 +82,10 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                &copy; Gratification Monkeys 2018
+            2018 &copy; Gratification Monkeys 
             </div>
             <div class="col-sm-6">
-                <ul class="pull-right">
+                <ul class="pull-right cremail">
                     <li>
                         admin@mail.com
                     </li>

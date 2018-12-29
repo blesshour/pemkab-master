@@ -1,5 +1,5 @@
 <!-- Begin fluid width widget -->
-<div class="panel panel-danger">
+<div class="panel panel-danger" id="recent-post">
     <div class="panel-heading">
         <h3 class="panel-title">
             <span class="glyphicon glyphicon-list-alt"></span> Berita Terkiini
@@ -33,4 +33,3 @@
     </div>
 </div>
 <!-- End fluid width widget -->
-</div>

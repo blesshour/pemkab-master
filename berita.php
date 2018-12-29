@@ -58,11 +58,12 @@
 
             <aside class="col-sm-4">
                 <!-- Insert Sidebar -->
+                <?=$this->insert('sidebar-recent-post');?>
                 <?=$this->insert('sidebar-ann');?>
                 <?=$this->insert('sidebar');?>
             </aside> 
 
-            <div class="col-sm-12 text-center">
+            <!-- <div class="col-sm-12 text-center">
                 <ul class="pagination pagination-lg">
                     <li><a href="#"><i class="fa fa-long-arrow-left"></i></a></li>
                     <li class="active"><a href="#">1</a></li>
@@ -71,7 +72,7 @@
                     <li><a href="#">4</a></li>
                     <li><a href="#">5</a></li>
                     <li><a href="#"><i class="fa fa-long-arrow-right"></i></a></li>
-                </ul>
+                </ul> -->
                 <!--/.pagination-->
             </div>
                             

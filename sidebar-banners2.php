@@ -1,8 +1,14 @@
 <div class="small-banner-slider owl-carousel">
+    <?php
+        $gals = $this->pocore()->call->podb->from('galeri')
+            ->orderBy('id_foto DESC')
+            ->fetchAll();
+            foreach($gals as $gal){ 
+                if ($gal['id_album_gal'] == 8) {
+    ?>
     <div class="item">
-        <img class="img-responsive" src="<?=$this->asset('/images/uploads/bannernatal01.png')?>" alt="">
+        <img class="img-responsive" src="<?=BASE_URL;?>/<?=DIR_CON;?>/uploads/<?=$gal['file_foto'];?>" alt="">
     </div>
-    <div class="item">
-        <img class="img-responsive" src="<?=$this->asset('/images/uploads/bannernatal02.png')?>" alt="">
-    </div>
+    <?php }
+    } ?>
 </div>
