@@ -225,7 +225,6 @@ body>section {
 .navbar-nav {
     margin-top: 15px;
     padding-left: 10px;
-    font-size: 18px;
 }
 
 .navbar-nav>li {
@@ -588,18 +587,31 @@ body>section {
 /***********************
 ********* Running Text ******
 ************************/
-.running-text .item {
-    background-color: #da251d;
-    color: #fff;
-    height: 30px;
-    padding: 3px;
+.running-text {
+    margin: 0;
 }
+.marquee {
 
-.running-text .label-warning {
+    width: 100%;
     background-color: #fff500;
-    color: #da251d;
-}
+    border-radius: 34px;
+    line-height: 10px;
+	color: #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
 
+}
+.marquee p {
+    
+    display: inline-block;
+    padding-top: 5px;
+    animation: marquee 30s linear infinite;
+}
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
 
 /***********************
 ********* Featured-news ******
@@ -1236,7 +1248,7 @@ body>section {
     padding-top: 50px;
 }
 
-#page-suara-anda .suaraanda-form .form-group label {
+#page-suara-anda .contact-form .form-group label {
     color: #989898;
     font-size: 16px;
     font-weight: 300;
