@@ -12,6 +12,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow: auto!important;
+    max-height: 100% !important;
 }
 
 /******************************************
@@ -322,6 +324,10 @@ body>section {
     background: rgba(0, 0, 0, 0.39);
 }
 
+.pic-slider .owl-dots {
+    display:none;
+}
+
 /******************************************
 ******* Service ***************************
 ******************************************/
@@ -335,7 +341,7 @@ body>section {
 }
 
 #service {
-    margin-bottom: -140px;
+    margin-bottom: -40px;
 }
 
 #service .service-wrap .icon {
@@ -379,7 +385,7 @@ body>section {
 .running-text .item {
     background-color: #da251d;
     color: #fff;
-    height: 30px;
+    height: auto;
     padding: 3px;
 }
 
@@ -859,9 +865,9 @@ body>section {
 /******************************************
 ******* Berita ****************************
 ******************************************/
-#berita {
+/* #berita {
     padding-top: 0px;
-}
+} */
 
 #berita .page-title {
     padding-top: 70px;
@@ -871,9 +877,9 @@ body>section {
     color: #da251d;
 }
 
-#berita .item {
+/* #berita .item {
     position: relative;
-}
+} */
 
 #berita .item img {
     width: 100%;
@@ -884,9 +890,9 @@ body>section {
      padding-right: 0px;
 }
 
-#berita .item {
+/* #berita .item {
     margin-bottom: 20px;
-}
+} */
 
 #berita .post-slide12{
     margin-bottom:2em;
@@ -898,7 +904,6 @@ body>section {
     height: auto;
     padding: 0px 0px 0px 10px;
 }
-
 
 #berita .post-slide12 .post-img img{
     width:100%;
@@ -1759,4 +1764,45 @@ body:not(.device-touch) .social-icon i {
 #footer ul>li {
     display: inline-block;
     margin-left: 15px;
+}
+
+/******************************************
+******* Scroll-top button *****************
+******************************************/
+
+.scroll-top-wrapper {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+	overflow: hidden;
+	text-align: center;
+	z-index: 999999;
+    background-color: #777777;
+	color: #eeeeee;
+	width: 50px;
+	height: 48px;
+	line-height: 48px;
+	right: 30px;
+	bottom: 30px;
+	padding-top: 2px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.scroll-top-wrapper:hover {
+	background-color: #888888;
+}
+.scroll-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+	opacity: 1.0;
+}
+.scroll-top-wrapper i.fa {
+	line-height: inherit;
 }
