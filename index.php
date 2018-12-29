@@ -66,8 +66,13 @@
 
 	<!-- Insert Footer -->
 	<?=$this->insert('footer');?>
-	
 
+	<div class="scroll-top-wrapper ">
+		<span class="scroll-top-inner">
+			<i class="fa fa-2x fa-arrow-circle-up"></i>
+		</span>
+	</div>
+	
 	<!-- Javascript -->
 	<script type="text/javascript" src="<?=$this->asset('/js/jquery.js')?>"></script>
 	<script type="text/javascript" src="<?=$this->asset('/js/bootstrap.min.js')?>"></script>
