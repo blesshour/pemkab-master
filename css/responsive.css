@@ -65,6 +65,7 @@
   /* ####################################### */
 
   #service {
+    margin-top: 20px;
     margin-bottom: -160px;
   }
   #service .container{
@@ -72,7 +73,7 @@
   }
   
   .service {
-    padding: 20px;
+    padding: 10px;
   }
 
   #service .service-wrap .icon {
@@ -225,7 +226,7 @@
   }
   
   .service {
-    padding: 20px 20px 20px 30px;
+    padding: 10px 10px 10px 30px;
   }
 
   #service .item {
@@ -242,7 +243,7 @@
   }
 
   #service .service-wrap .icon i{
-    font-size: 100%;
+    font-size: 70%;
   }
 
   #service .service-wrap .capt h2 {
@@ -619,6 +620,34 @@
     width: 450px;
   }
   
+  /* ########################################## */
+  /* --------- main-sliders ------------------- */
+  /* ########################################## */
+
+  #main-sliders a {
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  #main-sliders a:hover {
+    color: #da251d;
+  }
+
+  #main-sliders .item .overlay {
+      right: 10px;
+      width: 30%;
+      margin-bottom: 15%;
+      padding: 5px;
+      overflow: scroll;
+  } 
+
+  /* ########################################## */
+  /* --------- Footer -------------------------- */
+  /* ########################################### */
+  
+  #footer{
+    font-size: 100%;
+  }
 
 }
 
@@ -874,8 +903,50 @@
     padding-right: 15px;
   }
 
+  /* ########################################## */
+  /* --------- main-sliders ------------------- */
+  /* ########################################## */
 
+  #main-sliders a {
+    font-size: 10px;
+    line-height: 10px;
+  }
 
+  #main-sliders a:hover {
+    color: #da251d;
+  }
+
+  #main-sliders .item .overlay {
+      top: 10px;
+      bottom: 0px;
+      right: 10px;
+      width: 110px;
+      margin-bottom: 0px;
+      padding: 5px;
+      overflow: scroll;
+      height: 50px;
+  } 
+
+  /* ########################################## */
+  /* --------- Running-Text ------------------- */
+  /* ########################################## */
+
+  .running-text {
+    font-size: 100%;
+  }
+
+  .running-text .item {
+    height: auto;
+  }
+
+  /* ########################################## */
+  /* --------- Footer -------------------------- */
+  /* ########################################### */
+  
+  #footer{
+    font-size: 100%;
+  }
+  
 }
 
 
@@ -1128,6 +1199,50 @@
     height: 50px;
     font-size: 100%;
   }
+
+  /* ########################################## */
+  /* --------- main-sliders ------------------- */
+  /* ########################################## */
+
+  #main-sliders a {
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  #main-sliders a:hover {
+    color: #da251d;
+  }
+
+  #main-sliders .item .overlay {
+      top: 10px;
+      bottom: 0px;
+      right: 10px;
+      width: 110px;
+      margin-bottom: 0px;
+      padding: 5px;
+      overflow: scroll;
+      height: 50px;
+  }
+
+  /* ########################################## */
+  /* --------- Running-Text ------------------- */
+  /* ########################################## */
+
+  .running-text {
+    font-size: 100%;
+  }
+
+  .running-text .item {
+  height: auto;}
+
+  /* ########################################## */
+  /* --------- Footer -------------------------- */
+  /* ########################################### */
+  
+  #footer{
+    font-size: 100%;
+  }
+  
 }
 
 
@@ -1391,6 +1506,49 @@
 
   #suara-anda .box {
     width: 250px;
+    font-size: 100%;
+  }
+
+  /* ########################################## */
+  /* --------- main-sliders ------------------- */
+  /* ########################################## */
+
+  #main-sliders a {
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  #main-sliders a:hover {
+    color: #da251d;
+  }
+
+  #main-sliders .item .overlay {
+      top: 10px;
+      bottom: 0px;
+      right: 10px;
+      width: 110px;
+      margin-bottom: 0px;
+      padding: 5px;
+      overflow: scroll;
+      height: 50px;
+  } 
+
+  /* ########################################## */
+  /* --------- Running-Text ------------------- */
+  /* ########################################## */
+
+  .running-text {
+    font-size: 100%;
+  }
+
+  .running-text .item {
+  height: auto;}
+
+  /* ########################################## */
+  /* --------- Footer -------------------------- */
+  /* ########################################### */
+  
+  #footer{
     font-size: 100%;
   }
 }
