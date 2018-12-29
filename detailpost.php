@@ -1,12 +1,9 @@
 <?=$this->layout('index');?>
 
-<section id="berita">
-
-<script async src="//platform-api.sharethis.com/js/sharethis.js#property=5c2351a42abd7d00112b9ebd&product="sticky-share-buttons"></script>
-
-    <div class="container">
+<section id="detailpost">
+  <div class="container">
         <div class="row">
-            <div class="col-md-9">
+            <div class="col-md-8">
                 <h2><?=$post['title'];?></h2>
                 <div class="entry-meta">
                     <span id="publish_date" class="fa fa-calendar padding-main">&nbsp;<?=$this->pocore()->call->podatetime->tgl_indo($post['date']);?></span>
@@ -104,7 +101,7 @@
             </div>
             <!-- ./end of col-md-6 (main) -->
             
-            <aside class="col-md-3">
+            <aside class="col-md-4">
                 <!-- Insert Sidebar -->
                 <?=$this->insert('sidebar-recent-post');?>
                 <?=$this->insert('sidebar');?>
