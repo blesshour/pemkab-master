@@ -6,8 +6,13 @@
                 <li data-target="#headslider" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
+            <?php
+                $gals = $this->pocore()->call->podb->from('galeri')
+                    ->orderBy('id_foto DESC')
+                    ->fetchAll();
+                    foreach($gals as $gal){ ?>
 
-                <div class="item active" style="background-image: url(<?=$this->asset('/images/slider/bg1.jpg')?>)">
+                <div class="item" style="background-image: url(<?=BASE_URL;?>/<?=DIR_CON;?>/uploads/<?=$gal['file_foto'];?>)">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-7">
@@ -25,27 +30,7 @@
                     </div>
                 </div>
                 <!--/.item-->
-
-                <div class="item" style="background-image: url(<?=$this->asset('/images/slider/bg2.jpg')?>)">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-7">
-                                <div class="carousel-content">
-                                    <!-- <h1 class="animation animated-item-1">Help Finding Information Online</h1> -->
-                                    <div class="animation animated-item-1">
-                                        Every new computer that’s brought home from the store has an operating system installed onto it.
-                                    </div>
-                                    <!-- <a class="btn-slide white animation animated-item-3" href="#">Learn More</a> -->
-                                    <!-- <a class="btn-slide animation animated-item-3" href="#">Get Started</a> -->
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-                <!--/.item-->
-
+            <?php } ?>
             </div>
             <!--/.carousel-inner-->
         </div>
