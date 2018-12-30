@@ -1,8 +1,24 @@
 <?=$this->layout('index');?>
-<div class="container-fluid berita-title">
-    <div class="page-title">
-        <h1>BERITA & INFO</h1>
+
+<style>
+    .breadcrumb {
+        background: none;
+    }
+
+</style>    
+
+<section class="header-selayang" id="header-visi-dan-misi">
+   <div class="jumbotron" style="background-image: url(<?=$this->asset('/images/gallery/gallery7.jpg')?>)">
+    <div class="container wow fadeIn">
+     <h1>Berita</h1>
+     <ol class="breadcrumb">
+        <li><a href="<?=BASE_URL;?>"><?=$this->e($front_home);?></a></li>
+        <li class="active"><?=$this->e($page_title);?></li>
+    </ol>
     </div>
+   </div>
+ </section>
+
 <div>
     
 <section id="berita">
@@ -62,18 +78,6 @@
                 <?=$this->insert('sidebar-ann');?>
                 <?=$this->insert('sidebar');?>
             </aside> 
-
-            <!-- <div class="col-sm-12 text-center">
-                <ul class="pagination pagination-lg">
-                    <li><a href="#"><i class="fa fa-long-arrow-left"></i></a></li>
-                    <li class="active"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#"><i class="fa fa-long-arrow-right"></i></a></li>
-                </ul> -->
-                <!--/.pagination-->
             </div>
                             
         </div> 
@@ -81,6 +85,3 @@
     </div>
     <!-- end of container -->
 </section>
-
-
-
