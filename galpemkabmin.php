@@ -1,12 +1,28 @@
 <?=$this->layout('index');?>
-    <div class="page-title">
-        <h1>Galeri</h1>
+
+<style>
+    .breadcrumb {
+        background: none;
+    }
+
+</style>    
+
+<section class="header-selayang">
+   <div class="jumbotron" style="background-image: url(<?=$this->asset('/images/gallery/gallery7.jpg')?>)">
+    <div class="container wow fadeIn">
+     <h1>Galeri</h1>
+     <ol class="breadcrumb">
+        <li><a href="<?=BASE_URL;?>"><?=$this->e($front_home);?></a></li>
+        <li class="active"><?=$this->e($page_title);?></li>
+    </ol>
     </div>
+   </div>
+ </section>
+
 
 <section id="galeri">
     <div class="container">
-        <!--/#galeri-filter-->
-        
+
         <div class="row">
             <div class="galeri-items">
             <?php
@@ -14,8 +30,9 @@
                     ->orderBy('id_foto DESC')
                     ->fetchAll();
                     foreach($gals as $gal){ 
-                        $excp = [6,7,8];
-                        if (!( $gal['id_album_gal'] == 8 || 
+                        $excp = [6,7,8,9];
+                        if (!( $gal['id_album_gal'] == 9 || 
+                               $gal['id_album_gal'] == 8 || 
                                $gal['id_album_gal'] == 7 || 
                                $gal['id_album_gal'] == 6 ) ) {
             ?>
