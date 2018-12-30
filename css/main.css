@@ -1,9 +1,9 @@
 /*-----------------------------------------------------------------------------------
 
-	Theme Name: Pemkab Minahasa
-	Description: Tema khusus untuk Website Pemerintah Kabupaten Minahasa
-	Author: Gratification Monkey
-	Version: 1.0.0
+    Theme Name: Pemkab Minahasa
+    Description: Tema khusus untuk Website Pemerintah Kabupaten Minahasa
+    Author: Gratification Monkey
+    Version: 1.0.0
 
 -----------------------------------------------------------------------------------*/
 
@@ -287,7 +287,6 @@ body>section {
 ******************************************/
 #main-sliders {
     padding: 0;
-    margin: 0;
 }
 
 #main-sliders .holder {
@@ -332,8 +331,8 @@ body>section {
 ******* Service ***************************
 ******************************************/
 .service {
-	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
-	border-radius: 12px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
     background-color: white;
     z-index: 999;
     margin-top: -110px;
@@ -367,7 +366,6 @@ body>section {
 
 #service .service-wrap .capt h2 {
     color: #333;
-    /* padding: 7px 0 0 5px; */
     line-height: 40px;
     margin: 10px 0 10px 0;
 }
@@ -559,7 +557,7 @@ body>section {
     color: #1f1f1f;
 }
 
-#suara-anda .box {
+ .box {
     color: #1f1a17;
     margin: auto;
     width: 500px;
@@ -776,8 +774,8 @@ body>section {
     margin-top: 50px;
 }
 
-.kegiatan-unggulan {	
-    padding-bottom: 7em;	
+.kegiatan-unggulan {    
+    padding-bottom: 7em;    
 }
 
 /* Sejarah */
@@ -841,8 +839,8 @@ body>section {
     background: none;
 }
 
-.peta {	
-    padding-bottom: 7em;	
+.peta { 
+    padding-bottom: 7em;    
 }
 
 /*Lambang dan Arti*/
@@ -858,16 +856,13 @@ body>section {
     padding-bottom: 20px;   
 }
 
-.arti-lambang-full {	
-    padding-bottom: 7em;	
+.arti-lambang-full {    
+    padding-bottom: 7em;    
 }
 
 /******************************************
 ******* Berita ****************************
 ******************************************/
-/* #berita {
-    padding-top: 0px;
-} */
 
 #berita .page-title {
     padding-top: 70px;
@@ -877,9 +872,6 @@ body>section {
     color: #da251d;
 }
 
-/* #berita .item {
-    position: relative;
-} */
 
 #berita .item img {
     width: 100%;
@@ -890,9 +882,6 @@ body>section {
      padding-right: 0px;
 }
 
-/* #berita .item {
-    margin-bottom: 20px;
-} */
 
 #berita .post-slide12{
     margin-bottom:2em;
@@ -1044,34 +1033,6 @@ body>section {
     list-style: none outside none;
     margin: 0 0 40px 0;
     padding: 20px 0 0 0;
-}
-
-.galeri-filter>li {
-    display: inline-block;
-}
-
-.galeri-filter>li a {
-    background: none repeat scroll 0 0 #FFFFFF;
-    font-size: 14px;
-    font-weight: 400;
-    margin-right: 20px;
-    text-transform: uppercase;
-    transition: all 0.9s ease 0s;
-    -moz-transition: all 0.9s ease 0s;
-    -webkit-transition: all 0.9s ease 0s;
-    -o-transition: all 0.9s ease 0s;
-    border: 1px solid #F2F2F2;
-    outline: none;
-    border-radius: 3px;
-}
-
-.galeri-filter>li a:hover,
-.galeri-filter>li a.active {
-    color: #fff;
-    background: #EC5538;
-    border: 1px solid #EC5538;
-    box-shadow: none;
-    -webkit-box-shadow: none;
 }
 
 .galeri-items>li {
@@ -1227,24 +1188,6 @@ body>section {
     padding: 15px 30px;
 }
 
-textarea#message {
-    resize: none;
-    padding: 10px;
-}
-
-#page-suara-anda .box {
-    margin: auto;
-    width: 80%;
-    padding: 30px;
-    margin-bottom: 40px;
-    background-color: rgb(241, 194, 194);
-    -webkit-box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
-            box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    border-radius: 20px;
-}
-
 
 /******************************************
 ******* Widgets / Sidebar *****************
@@ -1382,22 +1325,22 @@ ul.sidebar-gallery {
 ******* Comments ***************************
 ******************************************/
 #comments {
-	position: relative;
-	margin-top: 50px;
-	padding-top: 50px;
-	border-top: 1px solid #EEE;
+    position: relative;
+    margin-top: 50px;
+    padding-top: 50px;
+    border-top: 1px solid #EEE;
 }
 
 .commentlist {
-	list-style: none;
-	padding-bottom: 50px;
-	margin: 0 0 50px;
-	border-bottom: 1px solid #EEE;
+    list-style: none;
+    padding-bottom: 50px;
+    margin: 0 0 50px;
+    border-bottom: 1px solid #EEE;
 }
 
 #reviews .commentlist {
-	padding-bottom: 30px;
-	margin: 0 0 20px;
+    padding-bottom: 30px;
+    margin: 0 0 20px;
 }
 
 .commentlist ul { list-style: none; }
@@ -1406,109 +1349,109 @@ ul.sidebar-gallery {
 .commentlist li ul li { margin: 30px 0 0 0; }
 .commentlist ul:first-child { margin-top: 0; }
 .commentlist li {
-	position: relative;
-	margin: 30px 0 0 30px;
+    position: relative;
+    margin: 30px 0 0 30px;
 }
 
 #reviews .commentlist li { margin-top: 20px; }
 .comment-wrap {
-	position: relative;
-	border: 1px solid #E5E5E5;
-	border-radius: 5px;
-	padding: 20px 20px 20px 35px;
+    position: relative;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    padding: 20px 20px 20px 35px;
 }
 
 .commentlist ul .comment-wrap {
-	margin-left: 25px;
-	padding-left: 20px;
+    margin-left: 25px;
+    padding-left: 20px;
 }
 
 #reviews .comment-wrap {
-	border: 0;
-	padding: 10px 0 0 35px;
+    border: 0;
+    padding: 10px 0 0 35px;
 }
 
 .commentlist > li:first-child,
 #reviews .commentlist > li:first-child {
-	padding-top: 0;
-	margin-top: 0;
+    padding-top: 0;
+    margin-top: 0;
 }
 
 .commentlist li .children { margin-top: 0; }
 .commentlist li li .children { margin-left: 30px; }
 .commentlist li .comment-content,
 .pingback {
-	position: relative;
-	overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
 
 .commentlist li .comment-content p,
 .pingback p { margin: 20px 0 0 0; }
 .commentlist li .comment-content { padding: 0 0 0 15px; }
 .commentlist li .comment-meta {
-	float: left;
-	margin-right: 0;
-	line-height: 1;
+    float: left;
+    margin-right: 0;
+    line-height: 1;
 }
 
 .comment-avatar {
-	position: absolute;
-	top: 15px;
-	left: -35px;
-	padding: 4px;
-	background: #FFF;
-	border: 1px solid #E5E5E5;
-	border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: -35px;
+    padding: 4px;
+    background: #FFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 50%;
 }
 
 .comment-avatar img {
-	display: block;
-	border-radius: 50%;
+    display: block;
+    border-radius: 50%;
 }
 
 .commentlist li .children .comment-avatar { left: -25px; }
 .comment-content .comment-author {
-	margin-bottom: -10px;
-	font-size: 16px;
-	font-weight: bold;
-	color: #555;
+    margin-bottom: -10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
 }
 
 .comment-content .comment-author a {
-	border: none;
-	color: #333;
+    border: none;
+    color: #333;
 }
 
 .comment-content .comment-author a:hover { color: #1ABC9C; }
 .comment-content .comment-author span { display: block; }
 .comment-content .comment-author span,
 .comment-content .comment-author span a {
-	font-size: 12px;
-	font-weight: normal;
-	font-family: 'Lato', sans-serif;
-	font-style: italic;
-	color: #AAA;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    color: #AAA;
 }
 
 .comment-content .comment-author span a:hover { color: #888; }
 .comment-reply-link,
 .review-comment-ratings {
-	display: block;
-	position: absolute;
-	top: 4px;
-	left: auto;
-	text-align: center;
-	right: 0px;
-	width: 14px;
-	height: 14px;
-	color: #CCC;
-	font-size: 14px;
-	line-height: 1;
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: auto;
+    text-align: center;
+    right: 0px;
+    width: 14px;
+    height: 14px;
+    color: #CCC;
+    font-size: 14px;
+    line-height: 1;
 }
 
 .review-comment-ratings {
-	width: auto;
-	color: #333;
+    width: auto;
+    color: #333;
 }
 
 .comment-reply-link:hover { color: #888; }
@@ -1522,8 +1465,8 @@ ul.sidebar-gallery {
 #respond p:first-child { margin-top: 0; }
 
 #respond label small {
-	color: #999;
-	font-weight: normal;
+    color: #999;
+    font-weight: normal;
 }
 
 #respond input[type="text"],
@@ -1536,9 +1479,9 @@ ul.sidebar-gallery {
 .fb_iframe_widget > span,
 .fb-comments > span > iframe,
 .fb_iframe_widget > span > iframe {
-	display: block !important;
-	width: 100% !important;
-	margin: 0;
+    display: block !important;
+    width: 100% !important;
+    margin: 0;
 }
 
 /******************************************
@@ -1774,31 +1717,31 @@ body:not(.device-touch) .social-icon i {
     position: fixed;
     opacity: 0;
     visibility: hidden;
-	overflow: hidden;
-	text-align: center;
-	z-index: 999999;
+    overflow: hidden;
+    text-align: center;
+    z-index: 999999;
     background-color: #da261da1;
-	color: #eeeeee;
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
-	right: 30px;
-	bottom: 30px;
-	border-radius: 50%;
-	-webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
+    color: #eeeeee;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 50%;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 .scroll-top-wrapper:hover {
-	background-color: #888888;
+    background-color: #888888;
 }
 .scroll-top-wrapper.show {
     visibility:visible;
     cursor:pointer;
-	opacity: 1.0;
+    opacity: 1.0;
 }
 .scroll-top-wrapper i.fa {
-	line-height: inherit;
+    line-height: inherit;
 }
