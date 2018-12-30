@@ -493,7 +493,6 @@ body>section {
     border: 1px solid #EC5538;
 }
 
-
 #welcome .animation.animated-item-1 {
     -webkit-animation: fadeInUp 300ms linear 300ms both;
     animation: fadeInUp 300ms linear 300ms both;
@@ -508,8 +507,6 @@ body>section {
     -webkit-animation: fadeInUp 300ms linear 900ms both;
     animation: fadeInUp 300ms linear 900ms both;
 }
-
-
 
 /***********************
 ********* Service ******
@@ -597,7 +594,6 @@ body>section {
 /***********************
 ********* Featured-news ******
 ************************/
-
 
 #featured-news{
     background: linear-gradient(#e94840,#fff);
@@ -832,31 +828,6 @@ body>section {
 #socmed ul li a:hover .logo {
     transform: rotateY(360deg);
 }
-
-
-
-/*DESKTOP ONLY*/
-    /*@media (min-width: 768px) and (max-width: 991px) {
-        
-        #socmed li a {
-            width: 50px;
-            height: 50px;
-            color: #ACACAC;
-            background: #ACACAC;
-            text-align: auto;
-            line-height: 40px;
-            font-size: 25px;
-            margin: 0 3.5em;
-            display: block;
-            border-radius: 50%;
-            position: relative;
-            overflow: hidden;
-            border: 3px solid;
-        }
-
-    }*/
-
-
 
 /***********************
 ********* Footers ******
@@ -1168,35 +1139,6 @@ body>section {
     margin-top: 50px;
 }
  
- /*fact panel 1 */
-/*#fact-panel1 .info {
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
-    
-    margin-top: 10px;
-    background-color: white;
-}
-
-#fact-panel1 .info img {
-    width: 80px;
-    height: 80px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-
-#fact-panel1 .info h3 {
-    
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-#fact-panel1 .info p {
-    font-size: 18px;
-    color: #ACACAC;
-    margin-top: -5px;
-    font-weight: 200;*/
-
-
 /*Akhir Sejarah*/
 
 /* Peta dan Topografi */
@@ -1939,11 +1881,8 @@ ul.sidebar-gallery {
 }
 
 .entry-meta li a { color: #999; }
-
 .entry-meta li a:hover { color: #1ABC9C; }
-
 .entry-meta li:first-child:before { display: none; }
-
 .entry-meta li ins {
 	font-weight: 600;
 	text-decoration: none;
@@ -2267,7 +2206,6 @@ ul.sidebar-gallery {
 -----------------------------------------------------------------*/
 
 .si-colored { border-color: transparent !important; }
-
 .si-colored i { color: #FFF; }
 
 /* Social Icons - Large
@@ -2303,18 +2241,13 @@ body:not(.device-touch) .social-icon i {
 }
 
 .social-icon i:last-child { color: #FFF !important; }
-
 .social-icon:hover i:first-child { margin-top: -38px; }
-
 .social-icon.si-large:hover i:first-child { margin-top: -54px; }
-
 .social-icon.si-small:hover i:first-child { margin-top: -30px; }
-
 .social-icon:hover {
     color: #555;
     border-color: transparent;
 }
-
 .si-colored.social-icon { border-color: transparent; }
 
 /* Social Icons - Sticky
@@ -2386,18 +2319,14 @@ body:not(.device-touch) .social-icon i {
 
 .si-text-color.si-facebook i { color: #3B5998; }
 .si-text-color.si-gplus i { color: #DD4B39; }
-
 .si-text-color.si-google i { color: #DD4B39; }
 .si-text-color.si-rss i { color: #EE802F; }
-
 .si-text-color.si-twitter i { color: #00ACEE; }
 .si-text-color.si-youtube i { color: #C4302B; }
 .si-text-color.si-yahoo i { color: #720E9E; }
 .si-text-color.si-googleplay i { color: #DD4B39; }
 .si-text-color.si-instagram i { color: #3F729B; }
 .si-text-color:hover { color: #FFF; }
-
 .col_one_third { width: 30.63%; }
-
 .nobottommargin { margin-bottom: 0 !important; }
 
