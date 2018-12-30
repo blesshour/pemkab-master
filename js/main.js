@@ -12,6 +12,21 @@ jQuery(function ($) {
         });
     });
 
+    // Contact form
+    var form = $('#main-contact-form');
+    form.submit(function (event) {
+        event.preventDefault();
+        var form_status = $('<div class="form_status"></div>');
+        $.ajax({
+            url: $(this).attr('action'),
+            beforeSend: function () {
+                form.prepend(form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Mengirim data...</p>').fadeIn());
+            }
+        }).done(function (data) {
+            form_status.html('<p class="text-success">' + data.message + '</p>').delay(8000).fadeOut();
+        });
+    });
+
     //running-info
     $('.runinfo').owlCarousel({
         loop:true,
@@ -23,23 +38,7 @@ jQuery(function ($) {
         autoplayHoverPause:true
     })
 
-
-    // Contact form
-    var form = $('#main-contact-form');
-    form.submit(function (event) {
-        event.preventDefault();
-        var form_status = $('<div class="form_status"></div>');
-        $.ajax({
-            url: $(this).attr('action'),
-
-            beforeSend: function () {
-                form.prepend(form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Mengirim data...</p>').fadeIn());
-            }
-        }).done(function (data) {
-            form_status.html('<p class="text-success">' + data.message + '</p>').delay(8000).fadeOut();
-        });
-    });
-
+    //suara-anda slider
     $('.suara-anda-slider').owlCarousel({
         loop:true,
         margin:10,
@@ -68,37 +67,25 @@ jQuery(function ($) {
         autoplayHoverPause:true
     })
 
-    //pic-slider
-    $('.small-banner-slider').owlCarousel({
+    //banner
+    $('.banner').owlCarousel({
         animateOut: 'fadeOut',
         loop:true,
         margin:1,
         items: 1,
+        autoHeight: true,
         autoplay:true,
         autoplayTimeout:6000,
         autoplayHoverPause:true
     })
 
-    //hr
-    $('.hrbanner').owlCarousel({
-        animateOut: 'slideOutDown',
-        animateIn: 'flipInX',
-        margin:2,
-        loop:true,
-        autoHeight:true,
-        autoplay:true,
-        autoplayTimeout:4000,
-        autoplayHoverPause:true,
-        items:1,
-    });
-
     //featured-news
     $('.news2').owlCarousel({
         animateOut: 'fadeOut',
-        autoHeight: true,
         loop:true,
         margin:1,
         items: 1,
+        autoHeight: true,
         autoplay:true,
         autoplayTimeout:4000,
         autoplayHoverPause:true
@@ -136,18 +123,8 @@ jQuery(function ($) {
         autoplay:true,
         autoplayTimeout:4000,
         autoplayHoverPause:true
-    })
+    });
 
-    $('.agenda').owlCarousel({
-        loop:true,
-        margin:10,
-        dots: true,
-        autoHeight: true,
-        items:1,
-        autoplay:true,
-        autoplayTimeout:4000,
-        autoplayHoverPause:true
-    })
 
 });
 
