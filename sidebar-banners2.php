@@ -1,6 +1,7 @@
-<div class="small-banner-slider owl-carousel">
+<div class="banner owl-carousel" id="vrbanner">
     <?php
         $gals = $this->pocore()->call->podb->from('galeri')
+            ->where('tampilkan', 'Y')
             ->orderBy('id_foto DESC')
             ->fetchAll();
             foreach($gals as $gal){ 
