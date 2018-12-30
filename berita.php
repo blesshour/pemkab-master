@@ -7,7 +7,7 @@
 
 </style>    
 
-<section class="header-selayang" id="header-visi-dan-misi">
+<section class="header-selayang">
    <div class="jumbotron" style="background-image: url(<?=$this->asset('/images/gallery/gallery7.jpg')?>)">
     <div class="container wow fadeIn">
      <h1>Berita</h1>
