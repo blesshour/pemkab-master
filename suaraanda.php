@@ -1,12 +1,5 @@
 <?=$this->layout('index');?>
 
-<style>
-    .breadcrumb {
-        background: none;
-    }
-
-</style>
-
 <section class="header-selayang">
    <div class="jumbotron" style="background-image: url(<?=$this->asset('/images/gallery/gallery7.jpg')?>)">
     <div class="container wow fadeIn">
@@ -21,7 +14,7 @@
 
 
 
-<section id="page-suara-anda">
+<section id="suara-anda">
     <div class="container">
         <div class="row suaraanda-wrap">
             <div class="col-md-6 col-sm-12">
