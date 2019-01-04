@@ -1,4 +1,6 @@
-<?=$this->layout('index');?>
+<?=$this->layout('index');
+$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+?>
 
 <section id="detailpost">
   <div class="container">
