@@ -1,4 +1,6 @@
-<?=$this->layout('index');?>
+<?=$this->layout('index');
+$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+?>
 
 <section id="detailpost">
   <div class="container">
@@ -10,7 +12,7 @@
                     
                     <span><a href="#comments" class="fa fa-comment padding-main">&nbsp;<?=$this->post()->getCountComment($post['id_post']);?> <?=$this->e($front_comment);?></a></span>
 
-                    <a href="#"><i class="fa fa-share-alt"></i> Share </a>
+                    <a id="shareBtn" href="#"><i class="fa fa-share-alt"></i> Share </a>
                 </div>
 
                 <div class="blog-item">
@@ -110,3 +112,39 @@
         <!-- ./end of row -->
     </div>
 </section>
+
+<script>
+document.getElementById('shareBtn').onclick = function() {
+  FB.ui({
+    method: 'share',
+    display: 'popup',
+    href: '<?php echo $actual_link;?>',
+  }, function(response){});
+}
+;(function($){
+  $.fn.customerPopup = function (e, intWidth, intHeight, blnResize) {
+    
+    // Prevent default anchor event
+    e.preventDefault();
+    
+    // Set values for window
+    intWidth = intWidth || '500';
+    intHeight = intHeight || '400';
+    strResize = (blnResize ? 'yes' : 'no');
+
+    // Set title and open popup with focus on it
+    var strTitle = ((typeof this.attr('title') !== 'undefined') ? this.attr('title') : 'Social Share'),
+        strParam = 'width=' + intWidth + ',height=' + intHeight + ',resizable=' + strResize,            
+        objWindow = window.open(this.attr('href'), strTitle, strParam).focus();
+  }
+  
+  /* ================================================== */
+  
+  $(document).ready(function ($) {
+    $('.customer.share').on("click", function(e) {
+      $(this).customerPopup(e);
+    });
+  });
+    
+}(jQuery));
+</script>
