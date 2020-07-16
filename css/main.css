@@ -1740,3 +1740,12 @@ body:not(.device-touch) .social-icon i {
 .scroll-top-wrapper i.fa {
     line-height: inherit;
 }
+
+
+/******************************************
+******* Scroll-top button *****************
+******************************************/
+.breadcrumb {
+        background: none;
+        font-size: 14px;
+    }
